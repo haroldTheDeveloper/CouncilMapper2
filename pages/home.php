@@ -11,7 +11,26 @@
     <header>
       <?php include "../style/html/headerfile.html"?>
     </header>
-    <main>
+    <main class="pages">
+      <section class="home_left">
+        <div class="map-Boxes">
+          <a class="map-Box">
+            <p class="box-Title">
+              Unitary and District Council
+            </p>
+          </a>
+          <a class="map-Box">
+            <p class="box-Title">
+              County Council
+            </p>
+          </a>
+          <a class="map-Box">
+            <p class="box-Title">
+              House of Commons and Devolved
+            </p>
+          </a>
+        </div>
+      </section>
     </main>
     <footer>
       <?php include "../style/html/footerfile.html"?>

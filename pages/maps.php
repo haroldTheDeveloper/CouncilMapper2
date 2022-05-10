@@ -6,6 +6,9 @@
     <script src="\leaflet\leaflet.js"></script>
     <link rel="stylesheet" href="\style\stylesheets\main.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script>
+      var opaqueHeader = FALSE
+    </script>
   </head>
   <body>
     <header>

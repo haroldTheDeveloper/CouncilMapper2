@@ -3,11 +3,6 @@ html {
   justify-content: center;
 }
 
-.pages {
-  display: flex;
-  justify-content: center;
-}
-
 body {
   background-color: darkgrey;
 }
@@ -28,6 +23,18 @@ header {
 }
 
 .home_left {
+  background-color: white;
+  opacity: 0.2;
+  width: 97vw;
+  height: 4.5vw;
+  margin-top: 0.5vw;
+  display: flex;
+  align-self: center;
+  border-radius: 1vw;
+  box-shadow: 15px 10px 20px lightgrey;
+  padding: 0.5vw;
+  padding-bottom: 1vw;
+  transition: 1s;
 }
 
 aside {
@@ -52,39 +59,6 @@ aside:hover {
   opacity: 0.9;
 }
 
-.map-Boxes {
-  display: flex;
-  flex-direction: row;
-}
-
-.map-Box {
-  background-color: white;
-  opacity: 0.2;
-  width: 29.7vw;
-  height: 70vh;
-  margin-top: 0.5vw;
-  display: flex;
-  align-self: center;
-  border-radius: 1vw;
-  box-shadow: 15px 10px 20px lightgrey;
-  margin: 1vw;
-  padding-bottom: 1vw;
-  display: flex;
-  justify-content: center;
-  padding: 0.5vw;
-  transition: 1s;
-}
-
-.box-Title {
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  color: darkgrey;
-}
-
-.map-Box:hover {
-  opacity: 0.9;
-}
 
 
 #map {

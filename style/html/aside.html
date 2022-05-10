@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/style/html/aside.css">
+<head>
+  <script>
+      var numDistricts = 5
+      for (let i = 0; i < numDistricts; i++){
+        var number = string(i);
+        var boundaryId = "district"+number;
+        const boundaryInfoBox = document.createElement(boundaryId);
+        const textAdd = document.createTextNode("I");
+        boundaryInfoBox.appendChild(textAdd);
+        const element = document.getElementById("bottom-Aside");
+        element.appendChild(boundaryInfoBox);
+      };
+  </script>
+</head>
+<main class="map-Aside">
+  <div id="bottom-Aside">
+  </div>
+</main>

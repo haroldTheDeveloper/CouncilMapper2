@@ -15,7 +15,7 @@
     <script src="./mapParse.JS"></script>
     <main>
         <aside>
-          hi
+          <?php include "./style/html/aside.html"?>
         </aside>
       </main>
       <section>
