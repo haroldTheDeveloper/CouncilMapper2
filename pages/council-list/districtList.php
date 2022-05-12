@@ -19,7 +19,7 @@
     <footer>
       <?php
       $path = $_SERVER['DOCUMENT_ROOT'];
-      $path .= "\style\html\footerfile.html";
+      $path .= "\style\html\footerfile.html"; 
       include $path?>
     </footer>
   </body>

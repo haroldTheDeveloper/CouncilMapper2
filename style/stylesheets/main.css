@@ -73,11 +73,13 @@ aside:hover {
   justify-content: center;
   padding: 0.5vw;
   transition: 1s;
+  text-decoration: none;
 }
 
 .box-Title {
   font-family: sans-serif;
   font-weight: bold;
+  text-decoration: none;
   font-size: 2em;
   color: darkgrey;
 }
@@ -94,4 +96,12 @@ aside:hover {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+footer {
+  width: 99vw;
+  height: 4vw;
+  background-color: lightgrey;
+  z-index: 1;
+  position: absolute;
 }

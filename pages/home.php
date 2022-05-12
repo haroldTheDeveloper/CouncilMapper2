@@ -14,17 +14,18 @@
     <main class="pages">
       <section class="home_left">
         <div class="map-Boxes">
-          <a class="map-Box">
+          <a href="\pages\council-list\districtList.php" class="map-Box">
             <p class="box-Title">
               Unitary and District Council
             </p>
           </a>
-          <a class="map-Box">
+          <a href="\pages\council-list\countyList.php" class="map-Box">
             <p class="box-Title">
               County Council
             </p>
+            <img >
           </a>
-          <a class="map-Box">
+          <a href="\pages\council-list\nationList.php" class="map-Box">
             <p class="box-Title">
               House of Commons and Devolved
             </p>
@@ -32,8 +33,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <?php include "../style/html/footerfile.html"?>
-    </footer>
   </body>
+  <footer>
+    <?php include "../style/html/footerfile.html"?>
+  </footer>
 </html>
