@@ -23,12 +23,12 @@ const colourSeat = function(layer, Constituency_ID, colours){
   layer.setStyle({fillColor:colour, weight: 0})
 }
 
-const populationCalc = function(Constituency_ID, populations, populations2){
+const populationCalc = async function(Constituency_ID, populations, populations2){
   populations2[0] = 0
   for (let i = 0; i < populations.length; i++){
     if (populations[i].Constituency == Constituency_ID){
       console.log(populations[i].Constituency)
-      populations2[Constituency_ID] += populations[i].AllAges 
+      populations2[Constituency_ID] += populations[i].AllAges
     }
   }
   console.log(populations2)

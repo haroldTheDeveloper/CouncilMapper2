@@ -11,9 +11,9 @@
     <link href='/leaflet/leaflet.css' rel='stylesheet' />
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
-  <!--<header>
+  <header>
     <?php include "./style/html/headerfile.html"?>
-  </header>-->
+  </header>
   <body>
     <script src="./mapParse.JS"></script>
     <main>
@@ -21,7 +21,7 @@
           <div id="map"></div>
           <script src="/scripts/mapEvents.js"></script>
           <script>
-            var councilDirectory = "/assets/outputAreas/E08000003.json"
+            var councilDirectory = "/assets/outputAreas/E06000001.json"
             let map = L.map("map", {center: [55.262218, -2.801472], zoom: 10});
             L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
