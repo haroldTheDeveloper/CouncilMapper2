@@ -1,0 +1,10 @@
+#bottom-Aside {
+  font-style: normal;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%
+}

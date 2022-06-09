@@ -1,19 +1,26 @@
 <link rel="stylesheet" href="/style/html/aside.css">
 <head>
-  <script>
-      var numDistricts = 5
-      for (let i = 0; i < numDistricts; i++){
-        var number = string(i);
-        var boundaryId = "district"+number;
-        const boundaryInfoBox = document.createElement(boundaryId);
-        const textAdd = document.createTextNode("I");
-        boundaryInfoBox.appendChild(textAdd);
-        const element = document.getElementById("bottom-Aside");
-        element.appendChild(boundaryInfoBox);
-      };
-  </script>
 </head>
 <main class="map-Aside">
   <div id="bottom-Aside">
   </div>
+  <script>
+      var colours = ["red", "green", "orange", "blue", "purple"]
+      var numDistricts = 5
+      for (let i = 0; i < numDistricts; i++){
+        var number = String(i);
+        var boundaryId = "district" + number;
+        const boundaryInfoBox = document.createElement("div");
+        boundaryInfoBox.setAttribute('id',boundaryId)
+        const textAdd = document.createTextNode(number);
+        boundaryInfoBox.appendChild(textAdd);
+        const element = document.getElementById("bottom-Aside");
+        element.appendChild(boundaryInfoBox);
+        document.getElementById(boundaryId).style.backgroundColor = colours[i]
+        document.getElementById(boundaryId).style.color = 'white'
+        document.getElementById(boundaryId).style.margin = '0.5vh'
+        document.getElementById(boundaryId).style.padding = '0.5vh'
+        document.getElementById(boundaryId).style.borderRadius = '0.5vw'
+      };
+  </script>
 </main>
