@@ -5,22 +5,35 @@
   <div id="bottom-Aside">
   </div>
   <script>
-      var colours = ["red", "green", "orange", "blue", "purple"]
-      var numDistricts = 5
+      var Constituency_ID = 2
+      const setConstituency = function(boundaryId, Constituency_ID){
+        document.getElementById(boundaryId).addEventListener("click", function () {
+          var tempNumber = boundaryId.replace('district','')
+          tempNumber = parseInt(tempNumber);
+          Constituency_ID = tempNumber
+          document.getElementById(boundaryId).style.flexGrow = '2';
+        })
+      }
+      var colours = ["red", "green", "orange", "blue", "purple", 'brown', 'grey']
+      var numDistricts = colours.length
       for (let i = 0; i < numDistricts; i++){
         var number = String(i);
         var boundaryId = "district" + number;
-        const boundaryInfoBox = document.createElement("div");
+        const boundaryInfoBox = document.createElement("button");
+        boundaryInfoBox.setAttribute('type','button')
         boundaryInfoBox.setAttribute('id',boundaryId)
         const textAdd = document.createTextNode(number);
         boundaryInfoBox.appendChild(textAdd);
         const element = document.getElementById("bottom-Aside");
         element.appendChild(boundaryInfoBox);
+        new_ID = setConstituency(boundaryId, Constituency_ID)
         document.getElementById(boundaryId).style.backgroundColor = colours[i]
         document.getElementById(boundaryId).style.color = 'white'
         document.getElementById(boundaryId).style.margin = '0.5vh'
         document.getElementById(boundaryId).style.padding = '0.5vh'
         document.getElementById(boundaryId).style.borderRadius = '0.5vw'
+        document.getElementById(boundaryId).style.borderColor = 'white'
+        document.getElementById(boundaryId).style.zIndex = 2
       };
   </script>
 </main>

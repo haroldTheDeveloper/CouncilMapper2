@@ -33,9 +33,11 @@ const populationCalc = async function(Constituency_ID, populations){
   return populations2
 }
 
-const renderMap = async function(map, councilDirectory, Constituency_ID){
-  var populations2 = [0,0,0,0]
-  var colours = ['red', 'blue', 'green', 'orange']
+const renderMap = async function(map, councilDirectory, Constituency_ID, colours){
+  var populations2 = []
+  for (let i = 0; i < colours.length; i++){
+    populations2[i] = 0
+  }
   fetch(councilDirectory)
     .then(function(response) {
         return response.json();

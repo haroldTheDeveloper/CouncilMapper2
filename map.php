@@ -16,28 +16,28 @@
   </header>
   <body>
     <main>
+      <aside>
+        <?php include "./style/html/aside.html"?>
+      </aside>
         <section>
           <div id="map"></div>
           <script src="/scripts/mapEvents.js"></script>
           <script>
             var councilDirectory = ["/assets/outputAreas/E06000001.json", "/assets/outputAreas/E06000002.json", "/assets/outputAreas/E06000003.json", "/assets/outputAreas/E06000004.json"]
             var councils = ["E06000001", "E06000002", "E06000003", "E06000004"]
-            var Constituency_ID = 0
             let map = L.map("map", {center: [55.262218, -2.801472], zoom: 10});
             L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {attribution: "&copy; OpenStreetMap"}
             ).addTo(map);
             for (let i = 0; i < councilDirectory.length; i++){
-              renderMap(map, councilDirectory[i], Constituency_ID)
+              renderMap(map, councilDirectory[i], Constituency_ID, colours)
             }
+
             var pop = calculateTotalPopulation(councils)
             console.log(pop)
           </script>
         </section>
-        <aside>
-          <?php include "./style/html/aside.html"?>
-        </aside>
       </main>
   </body>
 </html>

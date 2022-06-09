@@ -21,7 +21,7 @@
           for (let i = 0; i < numCouncils; i++){
             var number = String(i);
             var boundaryId = "district" + number;
-            const boundaryInfoBox = document.createElement("div");
+            const boundaryInfoBox = document.createElement("button");
             boundaryInfoBox.setAttribute('id',boundaryId)
             const textAdd = document.createTextNode(number);
             boundaryInfoBox.appendChild(textAdd);
