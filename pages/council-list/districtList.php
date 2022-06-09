@@ -14,13 +14,29 @@
       $path .= "\style\html\headerfile.html";
       include $path?>
     </header>
-    <main>
+    <main id='districtList'>
+      <script>
+          var colours = ["red", "green", "orange", "blue", "purple"]
+          var numCouncils = 900
+          for (let i = 0; i < numCouncils; i++){
+            var number = String(i);
+            var boundaryId = "district" + number;
+            const boundaryInfoBox = document.createElement("div");
+            boundaryInfoBox.setAttribute('id',boundaryId)
+            const textAdd = document.createTextNode(number);
+            boundaryInfoBox.appendChild(textAdd);
+            const element = document.getElementById("districtList");
+            element.appendChild(boundaryInfoBox);
+            document.getElementById(boundaryId).style.backgroundColor = 'white'
+            document.getElementById(boundaryId).style.color = 'white'
+            document.getElementById(boundaryId).style.margin = '0.5vh'
+            document.getElementById(boundaryId).style.padding = '0.5vh'
+            document.getElementById(boundaryId).style.borderRadius = '1vw'
+            document.getElementById(boundaryId).style.width = '20vw'
+            document.getElementById(boundaryId).style.height = '20vw'
+            document.getElementById(boundaryId).style.opacity = 0.2
+          };
+      </script>
     </main>
-    <footer>
-      <?php
-      $path = $_SERVER['DOCUMENT_ROOT'];
-      $path .= "\style\html\footerfile.html"; 
-      include $path?>
-    </footer>
   </body>
 </html>
