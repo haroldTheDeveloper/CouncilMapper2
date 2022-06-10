@@ -41,6 +41,7 @@ aside {
   box-shadow: 15px 10px 20px lightgrey;
   padding: 1vw;
   transition: 1s;
+  position: absolute;
 }
 
 header:hover {

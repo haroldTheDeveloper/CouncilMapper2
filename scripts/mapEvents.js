@@ -36,14 +36,13 @@ const populationCalc = function(data){
   return populations2
 }
 
-const renderMap = function(map, councilDirectory, colours){
+const renderMap = function(map, councilDirectory, colours, newData){
   fetch(councilDirectory)
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
       var count = 0
-      var newData
         L.geoJSON(data, {fillColor:'white', weight: 1, color: 'black', fillOpacity: 0.6}).on('click', function(e){
             count += 1
             var District_Feature = e.sourceTarget.feature;

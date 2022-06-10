@@ -11,6 +11,9 @@
     <link href='/leaflet/leaflet.css' rel='stylesheet' />
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
+  <header>
+    <?php include "./style/html/headerfile.html"?>
+  </header>
   <body>
     <main>
       <aside>
@@ -25,6 +28,7 @@
             var councils = ["E06000024","E06000022","E06000023","E06000025"]
             var pop = calculateTotalPopulation(councils)
             console.log(pop)
+            var newData
             for (let i = 0; i < councils.length; i++){
               var directory = '/assets/outputAreas/' + councils[i] + '.json'
               councilDirectory[i] = directory
