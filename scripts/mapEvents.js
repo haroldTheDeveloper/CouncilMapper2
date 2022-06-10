@@ -21,7 +21,10 @@ const populationDis = function(District_ID){
 const colourSeat = function(layer, colours){
   colour = colours[Constituency_ID]
   console.log(colours)
-  layer.setStyle({fillColor:colour, weight: 0})
+  layer.setStyle({fillColor:colour, weight: 0, fillOpacity: 0.4})
+  if (Constituency_ID == 0){
+    layer.setStyle({fillColor:colour, weight: 1, fillOpacity: 0})
+  }
 }
 
 const populationCalc = function(data){
@@ -30,6 +33,7 @@ const populationCalc = function(data){
     if (data[i].Constituency == Constituency_ID){
       populations2[Constituency_ID] = populations2[Constituency_ID] + data[i].AllAges
       popDistrictId = 'Pop' + 'district' + Constituency_ID
+      populations2[0] = 'Placeholder'
       document.getElementById(popDistrictId).innerHTML =  populations2[Constituency_ID]
     }
   }
@@ -43,7 +47,7 @@ const renderMap = function(map, councilDirectory, colours, newData){
     })
     .then(function(data) {
       var count = 0
-        L.geoJSON(data, {fillColor:'white', weight: 1, color: 'black', fillOpacity: 0.6}).on('click', function(e){
+        L.geoJSON(data, {fillColor:'white', weight: 1, color: 'black', fillOpacity: 0}).on('click', function(e){
             count += 1
             var District_Feature = e.sourceTarget.feature;
             var layer = e.sourceTarget;

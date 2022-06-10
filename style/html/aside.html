@@ -22,19 +22,31 @@
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
         colours[i] = '#' + randomColor
       }
+      colours[0] = 'lightgrey'
       populations2 = []
       for (let i = 0; i < colours.length; i++){
         populations2[i] = 0
       }
       for (let i = 0; i < numDistricts; i++){
+        var textAdd
+        var textAddPop
+        var textAddPop2
         var number = String(i);
         var boundaryId = "district" + number;
         const boundaryInfoBox = document.createElement("button");
         boundaryInfoBox.setAttribute('type','button')
         boundaryInfoBox.setAttribute('id',boundaryId)
-        const textAdd = document.createTextNode(number);
-        const textAddPop = document.createElement('div');
-        const textAddPop2 = document.createTextNode(populations2[i]);
+        if (number != '0'){
+          textAdd = document.createTextNode(number);
+        } else if (number == '0') {
+          textAdd = document.createTextNode('Unassigned');
+        }
+        textAddPop = document.createElement('div');
+        if (number != '0'){
+          textAddPop2 = document.createTextNode(populations2[i]);
+        } else if (number == '0') {
+          textAddPop2 = document.createTextNode('Placeholder');
+        }
         var popName = 'Pop' + boundaryId
         textAddPop.setAttribute('id',popName)
         textAddPop.appendChild(textAddPop2)
@@ -48,12 +60,9 @@
         })
         document.getElementById(boundaryId).addEventListener("onmouseover", function() {this.style.boxShadow = '15px 10px 20px lightgrey'})
         document.getElementById(boundaryId).addEventListener("onmouseout", function() {this.style.boxShadow = 0})
-        document.getElementById(popName).style.backgroundColor = 'white'
-        document.getElementById(popName).style.color = 'darkgrey'
-        document.getElementById(boundaryId).style.borderRadius = '0.5vw'
         document.getElementById(boundaryId).style.backgroundColor = colours[i]
         document.getElementById(boundaryId).style.display = 'flex'
-        document.getElementById(boundaryId).style.flexDirection = 'row'
+        document.getElementById(boundaryId).style.flexDirection = 'column'
         document.getElementById(boundaryId).style.width = '13vw'
         document.getElementById(boundaryId).style.color = 'white'
         document.getElementById(boundaryId).style.margin = '0.5vh'
@@ -61,6 +70,12 @@
         document.getElementById(boundaryId).style.borderRadius = '0.5vw'
         document.getElementById(boundaryId).style.borderColor = 'white'
         document.getElementById(boundaryId).style.zIndex = 2
+        document.getElementById(popName).style.backgroundColor = 'white'
+        document.getElementById(popName).style.color = 'black'
+        document.getElementById(popName).style.alignSelf = 'end'
+        document.getElementById(popName).style.borderRadius = '0.5vw'
+        document.getElementById(popName).style.margin = '0.1vw'
+        document.getElementById(popName).style.padding = '0.1vw'
       };
   </script>
 </main>

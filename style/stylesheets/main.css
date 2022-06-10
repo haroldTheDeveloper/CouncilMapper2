@@ -14,7 +14,7 @@ body {
 
 header {
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.4;
   width: 97vw;
   height: 4.5vw;
   margin-top: 0.5vw;
@@ -32,7 +32,7 @@ header {
 
 aside {
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.4;
   width: 15vw;
   height: 75vh;
   margin-top: 1vw;
