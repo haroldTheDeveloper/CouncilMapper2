@@ -64,7 +64,32 @@ const renderMap = function(map, councilDirectory, colours){
                 populations2 = populationCalc()
                 console.log(populations2)
               })
-            }).on('contextmenu', function(ev) {
+            }).on('keydown', function(e){
+                var District_Feature = e.sourceTarget.feature;
+                var layer = e.sourceTarget;
+                console.log(layer)
+                var District_ID = District_Feature.properties.OA11CD
+                console.log(District_ID)
+                fetch("/assets/Populations/Populations.json")
+                  .then(function(response) {
+                      return response.json();
+                  })
+                  .then(function(data) {
+                    var countOnClick = null
+                    if (countOnClick == null){
+                      var newData = data
+                      newData = assign2(District_ID, newData)
+                    }
+                    if (countOnClick == null){
+                      countOnClick = 1
+                    }
+                    newData = assign2(District_ID, newData)
+                    populationID = populationDis(newData, District_ID)
+                    colourSeat(layer, colours)
+                    populations2 = populationCalc()
+                    console.log(populations2)
+                  })
+                }).on('contextmenu', function(ev) {
               return false;
             }, false)
         .addTo(map);
