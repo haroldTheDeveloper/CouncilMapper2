@@ -5,16 +5,22 @@
   <div id="bottom-Aside">
   </div>
   <script>
-      var Constituency_ID = 2
-      const setConstituency = function(boundaryId, Constituency_ID){
-        document.getElementById(boundaryId).addEventListener("click", function () {
-          var tempNumber = boundaryId.replace('district','')
-          tempNumber = parseInt(tempNumber);
-          Constituency_ID = tempNumber
-          document.getElementById(boundaryId).style.flexGrow = '2';
-        })
-      }
+    Constituency_ID = 0;
+    populationID = 0;
+    populations = 0
+  </script>
+  <script>
+    const setConstituency = function(boundaryId){
+        var tempNumber = boundaryId.replace('district','');
+        var tempNumber2 = parseInt(tempNumber);
+        var newConstituency_ID = tempNumber2;
+      return newConstituency_ID
+    }
       var colours = ["red", "green", "orange", "blue", "purple", 'brown', 'grey']
+      populations2 = []
+      for (let i = 0; i < colours.length; i++){
+        populations2[i] = 0
+      }
       var numDistricts = colours.length
       for (let i = 0; i < numDistricts; i++){
         var number = String(i);
@@ -23,11 +29,19 @@
         boundaryInfoBox.setAttribute('type','button')
         boundaryInfoBox.setAttribute('id',boundaryId)
         const textAdd = document.createTextNode(number);
+        const textAddPop = document.createElement('div');
+        const textAddPop2 = document.createTextNode(populations2[i]);
+        var popName = 'Pop' + boundaryId
+        textAddPop.setAttribute('id',popName)
+        textAddPop.appendChild(textAddPop2)
         boundaryInfoBox.appendChild(textAdd);
+        boundaryInfoBox.appendChild(textAddPop);
         const element = document.getElementById("bottom-Aside");
         element.appendChild(boundaryInfoBox);
-        new_ID = setConstituency(boundaryId, Constituency_ID)
+        document.getElementById(boundaryId).addEventListener("click", function() {Constituency_ID = setConstituency(this.id)})
         document.getElementById(boundaryId).style.backgroundColor = colours[i]
+        document.getElementById(boundaryId).style.display = 'flex'
+        document.getElementById(boundaryId).style.flexDirection = 'row'
         document.getElementById(boundaryId).style.color = 'white'
         document.getElementById(boundaryId).style.margin = '0.5vh'
         document.getElementById(boundaryId).style.padding = '0.5vh'

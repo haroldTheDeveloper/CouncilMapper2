@@ -23,15 +23,19 @@
           <div id="map"></div>
           <script src="/scripts/mapEvents.js"></script>
           <script>
-            var councilDirectory = ["/assets/outputAreas/E06000001.json", "/assets/outputAreas/E06000002.json", "/assets/outputAreas/E06000003.json", "/assets/outputAreas/E06000004.json"]
-            var councils = ["E06000001", "E06000002", "E06000003", "E06000004"]
+            var councilDirectory = []
+            var councils = ["E06000001", "E06000002", "E06000003", "E06000004","E06000005", "E06000047", "E06000048", 'E08000020', 'E08000021', 'E08000022', 'E08000023', 'E08000024']
+            for (let i = 0; i < councils.length; i++){
+              var directory = '/assets/outputAreas/' + councils[i] + '.json'
+              councilDirectory[i] = directory
+            }
             let map = L.map("map", {center: [55.262218, -2.801472], zoom: 10});
             L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {attribution: "&copy; OpenStreetMap"}
             ).addTo(map);
             for (let i = 0; i < councilDirectory.length; i++){
-              renderMap(map, councilDirectory[i], Constituency_ID, colours)
+              renderMap(map, councilDirectory[i], colours)
             }
 
             var pop = calculateTotalPopulation(councils)

@@ -20,10 +20,11 @@
           var numCouncils = 900
           for (let i = 0; i < numCouncils; i++){
             var number = String(i);
-            var boundaryId = "district" + number;
+            var boundaryId = "council" + number;
             const boundaryInfoBox = document.createElement("button");
             boundaryInfoBox.setAttribute('id',boundaryId)
             const textAdd = document.createTextNode(number);
+            const textAddPop = document.createTextNode(populations2[i]);
             boundaryInfoBox.appendChild(textAdd);
             const element = document.getElementById("districtList");
             element.appendChild(boundaryInfoBox);
@@ -35,6 +36,10 @@
             document.getElementById(boundaryId).style.width = '20vw'
             document.getElementById(boundaryId).style.height = '20vw'
             document.getElementById(boundaryId).style.opacity = 0.2
+            document.getElementById(boundaryId).style.borderColor = 'white'
+            document.getElementById(boundaryId).addEventListener('mouseover', function(){
+              this.style.opacity = 0.9
+            })
           };
       </script>
     </main>

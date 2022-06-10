@@ -1,4 +1,4 @@
-const assign2 = function(District_ID, Constituency_ID, populations){
+const assign2 = function(District_ID, populations){
   for (let i = 0; i < populations.length; i++){
     if (District_ID == populations[i].ID){
       populations[i].Constituency = Constituency_ID
@@ -18,13 +18,13 @@ const populationDis = function(populations, District_ID){
   }
 }
 
-const colourSeat = function(layer, Constituency_ID, colours){
+const colourSeat = function(layer, colours){
   colour = colours[Constituency_ID]
+  console.log(colours)
   layer.setStyle({fillColor:colour, weight: 0})
 }
 
-const populationCalc = async function(Constituency_ID, populations){
-  var populations2 = [0]
+const populationCalc = async function(){
   for (let i = 0; i < populations.length; i++){
     if (populations[i].Constituency == Constituency_ID){
       populations2[Constituency_ID] = populations2[Constituency_ID] + populations[i].AllAges
@@ -33,17 +33,13 @@ const populationCalc = async function(Constituency_ID, populations){
   return populations2
 }
 
-const renderMap = async function(map, councilDirectory, Constituency_ID, colours){
-  var populations2 = []
-  for (let i = 0; i < colours.length; i++){
-    populations2[i] = 0
-  }
+const renderMap = function(map, councilDirectory, colours){
   fetch(councilDirectory)
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
-        L.geoJSON(data).on('click', function(e){
+        L.geoJSON(data, {fillColor:'white', weight: 1, color: 'black'}).on('click', function(e){
             var District_Feature = e.sourceTarget.feature;
             var layer = e.sourceTarget;
             console.log(layer)
@@ -57,15 +53,15 @@ const renderMap = async function(map, councilDirectory, Constituency_ID, colours
                 var countOnClick = null
                 if (countOnClick == null){
                   var newData = data
-                  newData = assign2(District_ID, Constituency_ID, newData)
+                  newData = assign2(District_ID, newData)
                 }
                 if (countOnClick == null){
                   countOnClick = 1
                 }
-                newData = assign2(District_ID, Constituency_ID, newData)
-                var populationID = populationDis(newData, District_ID)
-                colourSeat(layer, Constituency_ID, colours)
-                populations2 = populationCalc(Constituency_ID, newData, populations2)
+                newData = assign2(District_ID, newData)
+                populationID = populationDis(newData, District_ID)
+                colourSeat(layer, colours)
+                populations2 = populationCalc()
                 console.log(populations2)
               })
             }).on('contextmenu', function(ev) {
