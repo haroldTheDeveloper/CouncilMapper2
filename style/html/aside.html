@@ -16,12 +16,16 @@
         var newConstituency_ID = tempNumber2;
       return newConstituency_ID
     }
-      var colours = ["red", "green", "orange", "blue", "purple", 'brown', 'grey']
+      var numDistricts = 29
+      var colours = []
+      for (let i = 0; i < numDistricts; i++){
+        var randomColor = Math.floor(Math.random()*16777215).toString(16);
+        colours[i] = '#' + randomColor
+      }
       populations2 = []
       for (let i = 0; i < colours.length; i++){
         populations2[i] = 0
       }
-      var numDistricts = colours.length
       for (let i = 0; i < numDistricts; i++){
         var number = String(i);
         var boundaryId = "district" + number;
@@ -42,6 +46,7 @@
         document.getElementById(boundaryId).style.backgroundColor = colours[i]
         document.getElementById(boundaryId).style.display = 'flex'
         document.getElementById(boundaryId).style.flexDirection = 'row'
+        document.getElementById(boundaryId).style.width = '10vw'
         document.getElementById(boundaryId).style.color = 'white'
         document.getElementById(boundaryId).style.margin = '0.5vh'
         document.getElementById(boundaryId).style.padding = '0.5vh'

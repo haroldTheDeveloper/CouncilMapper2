@@ -11,9 +11,7 @@
     <link href='/leaflet/leaflet.css' rel='stylesheet' />
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
-  <header>
-    <?php include "./style/html/headerfile.html"?>
-  </header>
+  
   <body>
     <main>
       <aside>
