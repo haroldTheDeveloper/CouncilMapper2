@@ -77,19 +77,17 @@ const renderMap = function(map, councilDirectory, colours){
     })
   }
 
-  const calculateTotalPopulation = async function(councils){
+  const calculateTotalPopulation = function(councils){
     fetch("/assets/Populations/Populations.json")
     .then(function(response){
       return response.json()
     })
     .then(function(data){
       var population = 0
-      var tempPop = 0
       for (let i = 0; i < councils.length; i++){
         for (let y = 0; y < data.length; y++){
-          if (councils[i]==data[i].ID){
-            tempPop = data[i].AllAges + population
-            population = tempPop
+          if (councils[i]==data[y].IDLocal){
+            population = data[y].AllAges + population
           }
         }
       }

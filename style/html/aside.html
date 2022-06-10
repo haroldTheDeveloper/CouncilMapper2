@@ -16,7 +16,7 @@
         var newConstituency_ID = tempNumber2;
       return newConstituency_ID
     }
-      var numDistricts = 29
+      var numDistricts = 46
       var colours = []
       for (let i = 0; i < numDistricts; i++){
         var randomColor = Math.floor(Math.random()*16777215).toString(16);
@@ -42,11 +42,19 @@
         boundaryInfoBox.appendChild(textAddPop);
         const element = document.getElementById("bottom-Aside");
         element.appendChild(boundaryInfoBox);
-        document.getElementById(boundaryId).addEventListener("click", function() {Constituency_ID = setConstituency(this.id)})
+        document.getElementById(boundaryId).addEventListener("click", function() {
+          Constituency_ID = setConstituency(this.id);
+          this.style.size = '10px';
+        })
+        document.getElementById(boundaryId).addEventListener("onmouseover", function() {this.style.boxShadow = '15px 10px 20px lightgrey'})
+        document.getElementById(boundaryId).addEventListener("onmouseout", function() {this.style.boxShadow = 0})
+        document.getElementById(popName).style.backgroundColor = 'white'
+        document.getElementById(popName).style.color = 'darkgrey'
+        document.getElementById(boundaryId).style.borderRadius = '0.5vw'
         document.getElementById(boundaryId).style.backgroundColor = colours[i]
         document.getElementById(boundaryId).style.display = 'flex'
         document.getElementById(boundaryId).style.flexDirection = 'row'
-        document.getElementById(boundaryId).style.width = '10vw'
+        document.getElementById(boundaryId).style.width = '13vw'
         document.getElementById(boundaryId).style.color = 'white'
         document.getElementById(boundaryId).style.margin = '0.5vh'
         document.getElementById(boundaryId).style.padding = '0.5vh'
