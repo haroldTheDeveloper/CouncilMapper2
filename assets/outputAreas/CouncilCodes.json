@@ -1,0 +1,2348 @@
+[
+  {
+    "LAD16CD": "E09000001",
+    "LAD16CDO": "00AA",
+    "LAD16NM": "City of London",
+    "FID": 1
+  },
+  {
+    "LAD16CD": "E09000002",
+    "LAD16CDO": "00AB",
+    "LAD16NM": "Barking and Dagenham",
+    "FID": 2
+  },
+  {
+    "LAD16CD": "E09000003",
+    "LAD16CDO": "00AC",
+    "LAD16NM": "Barnet",
+    "FID": 3
+  },
+  {
+    "LAD16CD": "E09000004",
+    "LAD16CDO": "00AD",
+    "LAD16NM": "Bexley",
+    "FID": 4
+  },
+  {
+    "LAD16CD": "E09000005",
+    "LAD16CDO": "00AE",
+    "LAD16NM": "Brent",
+    "FID": 5
+  },
+  {
+    "LAD16CD": "E09000006",
+    "LAD16CDO": "00AF",
+    "LAD16NM": "Bromley",
+    "FID": 6
+  },
+  {
+    "LAD16CD": "E09000007",
+    "LAD16CDO": "00AG",
+    "LAD16NM": "Camden",
+    "FID": 7
+  },
+  {
+    "LAD16CD": "E09000008",
+    "LAD16CDO": "00AH",
+    "LAD16NM": "Croydon",
+    "FID": 8
+  },
+  {
+    "LAD16CD": "E09000009",
+    "LAD16CDO": "00AJ",
+    "LAD16NM": "Ealing",
+    "FID": 9
+  },
+  {
+    "LAD16CD": "E09000010",
+    "LAD16CDO": "00AK",
+    "LAD16NM": "Enfield",
+    "FID": 10
+  },
+  {
+    "LAD16CD": "E08000024",
+    "LAD16CDO": "00CM",
+    "LAD16NM": "Sunderland",
+    "FID": 11
+  },
+  {
+    "LAD16CD": "E09000011",
+    "LAD16CDO": "00AL",
+    "LAD16NM": "Greenwich",
+    "FID": 12
+  },
+  {
+    "LAD16CD": "E09000012",
+    "LAD16CDO": "00AM",
+    "LAD16NM": "Hackney",
+    "FID": 13
+  },
+  {
+    "LAD16CD": "E08000025",
+    "LAD16CDO": "00CN",
+    "LAD16NM": "Birmingham",
+    "FID": 14
+  },
+  {
+    "LAD16CD": "E07000243",
+    "LAD16CDO": "26UH",
+    "LAD16NM": "Stevenage",
+    "FID": 15
+  },
+  {
+    "LAD16CD": "E08000026",
+    "LAD16CDO": "00CQ",
+    "LAD16NM": "Coventry",
+    "FID": 16
+  },
+  {
+    "LAD16CD": "E09000013",
+    "LAD16CDO": "00AN",
+    "LAD16NM": "Hammersmith and Fulham",
+    "FID": 17
+  },
+  {
+    "LAD16CD": "E09000014",
+    "LAD16CDO": "00AP",
+    "LAD16NM": "Haringey",
+    "FID": 18
+  },
+  {
+    "LAD16CD": "E08000027",
+    "LAD16CDO": "00CR",
+    "LAD16NM": "Dudley",
+    "FID": 19
+  },
+  {
+    "LAD16CD": "E07000102",
+    "LAD16CDO": "26UJ",
+    "LAD16NM": "Three Rivers",
+    "FID": 20
+  },
+  {
+    "LAD16CD": "E08000028",
+    "LAD16CDO": "00CS",
+    "LAD16NM": "Sandwell",
+    "FID": 21
+  },
+  {
+    "LAD16CD": "E09000015",
+    "LAD16CDO": "00AQ",
+    "LAD16NM": "Harrow",
+    "FID": 22
+  },
+  {
+    "LAD16CD": "E07000103",
+    "LAD16CDO": "26UK",
+    "LAD16NM": "Watford",
+    "FID": 23
+  },
+  {
+    "LAD16CD": "E06000034",
+    "LAD16CDO": "00KG",
+    "LAD16NM": "Thurrock",
+    "FID": 24
+  },
+  {
+    "LAD16CD": "E08000029",
+    "LAD16CDO": "00CT",
+    "LAD16NM": "Solihull",
+    "FID": 25
+  },
+  {
+    "LAD16CD": "E09000016",
+    "LAD16CDO": "00AR",
+    "LAD16NM": "Havering",
+    "FID": 26
+  },
+  {
+    "LAD16CD": "E06000035",
+    "LAD16CDO": "00LC",
+    "LAD16NM": "Medway",
+    "FID": 27
+  },
+  {
+    "LAD16CD": "E07000241",
+    "LAD16CDO": "26UL",
+    "LAD16NM": "Welwyn Hatfield",
+    "FID": 28
+  },
+  {
+    "LAD16CD": "E09000017",
+    "LAD16CDO": "00AS",
+    "LAD16NM": "Hillingdon",
+    "FID": 29
+  },
+  {
+    "LAD16CD": "E08000030",
+    "LAD16CDO": "00CU",
+    "LAD16NM": "Walsall",
+    "FID": 30
+  },
+  {
+    "LAD16CD": "E06000036",
+    "LAD16CDO": "00MA",
+    "LAD16NM": "Bracknell Forest",
+    "FID": 31
+  },
+  {
+    "LAD16CD": "E07000038",
+    "LAD16CDO": "17UJ",
+    "LAD16NM": "North East Derbyshire",
+    "FID": 32
+  },
+  {
+    "LAD16CD": "E07000039",
+    "LAD16CDO": "17UK",
+    "LAD16NM": "South Derbyshire",
+    "FID": 33
+  },
+  {
+    "LAD16CD": "E06000037",
+    "LAD16CDO": "00MB",
+    "LAD16NM": "West Berkshire",
+    "FID": 34
+  },
+  {
+    "LAD16CD": "E08000031",
+    "LAD16CDO": "00CW",
+    "LAD16NM": "Wolverhampton",
+    "FID": 35
+  },
+  {
+    "LAD16CD": "E07000105",
+    "LAD16CDO": "29UB",
+    "LAD16NM": "Ashford",
+    "FID": 36
+  },
+  {
+    "LAD16CD": "E09000018",
+    "LAD16CDO": "00AT",
+    "LAD16NM": "Hounslow",
+    "FID": 37
+  },
+  {
+    "LAD16CD": "E07000040",
+    "LAD16CDO": "18UB",
+    "LAD16NM": "East Devon",
+    "FID": 38
+  },
+  {
+    "LAD16CD": "E07000106",
+    "LAD16CDO": "29UC",
+    "LAD16NM": "Canterbury",
+    "FID": 39
+  },
+  {
+    "LAD16CD": "E09000019",
+    "LAD16CDO": "00AU",
+    "LAD16NM": "Islington",
+    "FID": 40
+  },
+  {
+    "LAD16CD": "E08000032",
+    "LAD16CDO": "00CX",
+    "LAD16NM": "Bradford",
+    "FID": 41
+  },
+  {
+    "LAD16CD": "E06000038",
+    "LAD16CDO": "00MC",
+    "LAD16NM": "Reading",
+    "FID": 42
+  },
+  {
+    "LAD16CD": "E07000041",
+    "LAD16CDO": "18UC",
+    "LAD16NM": "Exeter",
+    "FID": 43
+  },
+  {
+    "LAD16CD": "E07000107",
+    "LAD16CDO": "29UD",
+    "LAD16NM": "Dartford",
+    "FID": 44
+  },
+  {
+    "LAD16CD": "E08000033",
+    "LAD16CDO": "00CY",
+    "LAD16NM": "Calderdale",
+    "FID": 45
+  },
+  {
+    "LAD16CD": "E09000020",
+    "LAD16CDO": "00AW",
+    "LAD16NM": "Kensington and Chelsea",
+    "FID": 46
+  },
+  {
+    "LAD16CD": "E06000039",
+    "LAD16CDO": "00MD",
+    "LAD16NM": "Slough",
+    "FID": 47
+  },
+  {
+    "LAD16CD": "E07000042",
+    "LAD16CDO": "18UD",
+    "LAD16NM": "Mid Devon",
+    "FID": 48
+  },
+  {
+    "LAD16CD": "E07000108",
+    "LAD16CDO": "29UE",
+    "LAD16NM": "Dover",
+    "FID": 49
+  },
+  {
+    "LAD16CD": "E08000034",
+    "LAD16CDO": "00CZ",
+    "LAD16NM": "Kirklees",
+    "FID": 50
+  },
+  {
+    "LAD16CD": "E09000021",
+    "LAD16CDO": "00AX",
+    "LAD16NM": "Kingston upon Thames",
+    "FID": 51
+  },
+  {
+    "LAD16CD": "E06000040",
+    "LAD16CDO": "00ME",
+    "LAD16NM": "Windsor and Maidenhead",
+    "FID": 52
+  },
+  {
+    "LAD16CD": "E07000043",
+    "LAD16CDO": "18UE",
+    "LAD16NM": "North Devon",
+    "FID": 53
+  },
+  {
+    "LAD16CD": "E07000109",
+    "LAD16CDO": "29UG",
+    "LAD16NM": "Gravesham",
+    "FID": 54
+  },
+  {
+    "LAD16CD": "E08000035",
+    "LAD16CDO": "00DA",
+    "LAD16NM": "Leeds",
+    "FID": 55
+  },
+  {
+    "LAD16CD": "E09000022",
+    "LAD16CDO": "00AY",
+    "LAD16NM": "Lambeth",
+    "FID": 56
+  },
+  {
+    "LAD16CD": "E06000041",
+    "LAD16CDO": "00MF",
+    "LAD16NM": "Wokingham",
+    "FID": 57
+  },
+  {
+    "LAD16CD": "E07000044",
+    "LAD16CDO": "18UG",
+    "LAD16NM": "South Hams",
+    "FID": 58
+  },
+  {
+    "LAD16CD": "E08000036",
+    "LAD16CDO": "00DB",
+    "LAD16NM": "Wakefield",
+    "FID": 59
+  },
+  {
+    "LAD16CD": "E07000110",
+    "LAD16CDO": "29UH",
+    "LAD16NM": "Maidstone",
+    "FID": 60
+  },
+  {
+    "LAD16CD": "E09000023",
+    "LAD16CDO": "00AZ",
+    "LAD16NM": "Lewisham",
+    "FID": 61
+  },
+  {
+    "LAD16CD": "E07000045",
+    "LAD16CDO": "18UH",
+    "LAD16NM": "Teignbridge",
+    "FID": 62
+  },
+  {
+    "LAD16CD": "E07000111",
+    "LAD16CDO": "29UK",
+    "LAD16NM": "Sevenoaks",
+    "FID": 63
+  },
+  {
+    "LAD16CD": "E09000024",
+    "LAD16CDO": "00BA",
+    "LAD16NM": "Merton",
+    "FID": 64
+  },
+  {
+    "LAD16CD": "E06000001",
+    "LAD16CDO": "00EB",
+    "LAD16NM": "Hartlepool",
+    "FID": 65
+  },
+  {
+    "LAD16CD": "E07000046",
+    "LAD16CDO": "18UK",
+    "LAD16NM": "Torridge",
+    "FID": 66
+  },
+  {
+    "LAD16CD": "E06000042",
+    "LAD16CDO": "00MG",
+    "LAD16NM": "Milton Keynes",
+    "FID": 67
+  },
+  {
+    "LAD16CD": "E07000112",
+    "LAD16CDO": "29UL",
+    "LAD16NM": "Shepway",
+    "FID": 68
+  },
+  {
+    "LAD16CD": "E07000047",
+    "LAD16CDO": "18UL",
+    "LAD16NM": "West Devon",
+    "FID": 69
+  },
+  {
+    "LAD16CD": "E07000113",
+    "LAD16CDO": "29UM",
+    "LAD16NM": "Swale",
+    "FID": 70
+  },
+  {
+    "LAD16CD": "E07000224",
+    "LAD16CDO": "45UC",
+    "LAD16NM": "Arun",
+    "FID": 71
+  },
+  {
+    "LAD16CD": "E06000043",
+    "LAD16CDO": "00ML",
+    "LAD16NM": "Brighton and Hove",
+    "FID": 72
+  },
+  {
+    "LAD16CD": "E06000002",
+    "LAD16CDO": "00EC",
+    "LAD16NM": "Middlesbrough",
+    "FID": 73
+  },
+  {
+    "LAD16CD": "E09000025",
+    "LAD16CDO": "00BB",
+    "LAD16NM": "Newham",
+    "FID": 74
+  },
+  {
+    "LAD16CD": "E07000225",
+    "LAD16CDO": "45UD",
+    "LAD16NM": "Chichester",
+    "FID": 75
+  },
+  {
+    "LAD16CD": "E07000114",
+    "LAD16CDO": "29UN",
+    "LAD16NM": "Thanet",
+    "FID": 76
+  },
+  {
+    "LAD16CD": "E07000048",
+    "LAD16CDO": "19UC",
+    "LAD16NM": "Christchurch",
+    "FID": 77
+  },
+  {
+    "LAD16CD": "E06000044",
+    "LAD16CDO": "00MR",
+    "LAD16NM": "Portsmouth",
+    "FID": 78
+  },
+  {
+    "LAD16CD": "E07000226",
+    "LAD16CDO": "45UE",
+    "LAD16NM": "Crawley",
+    "FID": 79
+  },
+  {
+    "LAD16CD": "E07000049",
+    "LAD16CDO": "19UD",
+    "LAD16NM": "East Dorset",
+    "FID": 80
+  },
+  {
+    "LAD16CD": "E07000115",
+    "LAD16CDO": "29UP",
+    "LAD16NM": "Tonbridge and Malling",
+    "FID": 81
+  },
+  {
+    "LAD16CD": "E07000163",
+    "LAD16CDO": "36UB",
+    "LAD16NM": "Craven",
+    "FID": 82
+  },
+  {
+    "LAD16CD": "E06000045",
+    "LAD16CDO": "00MS",
+    "LAD16NM": "Southampton",
+    "FID": 83
+  },
+  {
+    "LAD16CD": "E09000026",
+    "LAD16CDO": "00BC",
+    "LAD16NM": "Redbridge",
+    "FID": 84
+  },
+  {
+    "LAD16CD": "E06000003",
+    "LAD16CDO": "00EE",
+    "LAD16NM": "Redcar and Cleveland",
+    "FID": 85
+  },
+  {
+    "LAD16CD": "E07000050",
+    "LAD16CDO": "19UE",
+    "LAD16NM": "North Dorset",
+    "FID": 86
+  },
+  {
+    "LAD16CD": "E07000116",
+    "LAD16CDO": "29UQ",
+    "LAD16NM": "Tunbridge Wells",
+    "FID": 87
+  },
+  {
+    "LAD16CD": "E07000227",
+    "LAD16CDO": "45UF",
+    "LAD16NM": "Horsham",
+    "FID": 88
+  },
+  {
+    "LAD16CD": "E07000164",
+    "LAD16CDO": "36UC",
+    "LAD16NM": "Hambleton",
+    "FID": 89
+  },
+  {
+    "LAD16CD": "E06000004",
+    "LAD16CDO": "00EF",
+    "LAD16NM": "Stockton-on-Tees",
+    "FID": 90
+  },
+  {
+    "LAD16CD": "E06000046",
+    "LAD16CDO": "00MW",
+    "LAD16NM": "Isle of Wight",
+    "FID": 91
+  },
+  {
+    "LAD16CD": "E07000051",
+    "LAD16CDO": "19UG",
+    "LAD16NM": "Purbeck",
+    "FID": 92
+  },
+  {
+    "LAD16CD": "E09000027",
+    "LAD16CDO": "00BD",
+    "LAD16NM": "Richmond upon Thames",
+    "FID": 93
+  },
+  {
+    "LAD16CD": "E07000117",
+    "LAD16CDO": "30UD",
+    "LAD16NM": "Burnley",
+    "FID": 94
+  },
+  {
+    "LAD16CD": "E07000228",
+    "LAD16CDO": "45UG",
+    "LAD16NM": "Mid Sussex",
+    "FID": 95
+  },
+  {
+    "LAD16CD": "E07000118",
+    "LAD16CDO": "30UE",
+    "LAD16NM": "Chorley",
+    "FID": 96
+  },
+  {
+    "LAD16CD": "W06000001",
+    "LAD16CDO": "00NA",
+    "LAD16NM": "Isle of Anglesey",
+    "FID": 97
+  },
+  {
+    "LAD16CD": "E09000028",
+    "LAD16CDO": "00BE",
+    "LAD16NM": "Southwark",
+    "FID": 98
+  },
+  {
+    "LAD16CD": "E07000052",
+    "LAD16CDO": "19UH",
+    "LAD16NM": "West Dorset",
+    "FID": 99
+  },
+  {
+    "LAD16CD": "E06000005",
+    "LAD16CDO": "00EH",
+    "LAD16NM": "Darlington",
+    "FID": 100
+  },
+  {
+    "LAD16CD": "E07000165",
+    "LAD16CDO": "36UD",
+    "LAD16NM": "Harrogate",
+    "FID": 101
+  },
+  {
+    "LAD16CD": "E07000229",
+    "LAD16CDO": "45UH",
+    "LAD16NM": "Worthing",
+    "FID": 102
+  },
+  {
+    "LAD16CD": "E09000029",
+    "LAD16CDO": "00BF",
+    "LAD16NM": "Sutton",
+    "FID": 103
+  },
+  {
+    "LAD16CD": "E07000119",
+    "LAD16CDO": "30UF",
+    "LAD16NM": "Fylde",
+    "FID": 104
+  },
+  {
+    "LAD16CD": "E06000047",
+    "LAD16CDO": "00EJ",
+    "LAD16NM": "County Durham",
+    "FID": 105
+  },
+  {
+    "LAD16CD": "E07000053",
+    "LAD16CDO": "19UJ",
+    "LAD16NM": "Weymouth and Portland",
+    "FID": 106
+  },
+  {
+    "LAD16CD": "W06000002",
+    "LAD16CDO": "00NC",
+    "LAD16NM": "Gwynedd",
+    "FID": 107
+  },
+  {
+    "LAD16CD": "E07000166",
+    "LAD16CDO": "36UE",
+    "LAD16NM": "Richmondshire",
+    "FID": 108
+  },
+  {
+    "LAD16CD": "E07000234",
+    "LAD16CDO": "47UB",
+    "LAD16NM": "Bromsgrove",
+    "FID": 109
+  },
+  {
+    "LAD16CD": "W06000003",
+    "LAD16CDO": "00NE",
+    "LAD16NM": "Conwy",
+    "FID": 110
+  },
+  {
+    "LAD16CD": "E07000120",
+    "LAD16CDO": "30UG",
+    "LAD16NM": "Hyndburn",
+    "FID": 111
+  },
+  {
+    "LAD16CD": "E07000167",
+    "LAD16CDO": "36UF",
+    "LAD16NM": "Ryedale",
+    "FID": 112
+  },
+  {
+    "LAD16CD": "E07000061",
+    "LAD16CDO": "21UC",
+    "LAD16NM": "Eastbourne",
+    "FID": 113
+  },
+  {
+    "LAD16CD": "E06000057",
+    "LAD16CDO": "00EM",
+    "LAD16NM": "Northumberland",
+    "FID": 114
+  },
+  {
+    "LAD16CD": "E09000030",
+    "LAD16CDO": "00BG",
+    "LAD16NM": "Tower Hamlets",
+    "FID": 115
+  },
+  {
+    "LAD16CD": "E07000235",
+    "LAD16CDO": "47UC",
+    "LAD16NM": "Malvern Hills",
+    "FID": 116
+  },
+  {
+    "LAD16CD": "W06000004",
+    "LAD16CDO": "00NG",
+    "LAD16NM": "Denbighshire",
+    "FID": 117
+  },
+  {
+    "LAD16CD": "E07000121",
+    "LAD16CDO": "30UH",
+    "LAD16NM": "Lancaster",
+    "FID": 118
+  },
+  {
+    "LAD16CD": "E07000062",
+    "LAD16CDO": "21UD",
+    "LAD16NM": "Hastings",
+    "FID": 119
+  },
+  {
+    "LAD16CD": "E09000031",
+    "LAD16CDO": "00BH",
+    "LAD16NM": "Waltham Forest",
+    "FID": 120
+  },
+  {
+    "LAD16CD": "E07000168",
+    "LAD16CDO": "36UG",
+    "LAD16NM": "Scarborough",
+    "FID": 121
+  },
+  {
+    "LAD16CD": "E06000049",
+    "LAD16CDO": "00EQ",
+    "LAD16NM": "Cheshire East",
+    "FID": 122
+  },
+  {
+    "LAD16CD": "E07000236",
+    "LAD16CDO": "47UD",
+    "LAD16NM": "Redditch",
+    "FID": 123
+  },
+  {
+    "LAD16CD": "W06000005",
+    "LAD16CDO": "00NJ",
+    "LAD16NM": "Flintshire",
+    "FID": 124
+  },
+  {
+    "LAD16CD": "E07000122",
+    "LAD16CDO": "30UJ",
+    "LAD16NM": "Pendle",
+    "FID": 125
+  },
+  {
+    "LAD16CD": "E07000063",
+    "LAD16CDO": "21UF",
+    "LAD16NM": "Lewes",
+    "FID": 126
+  },
+  {
+    "LAD16CD": "E09000032",
+    "LAD16CDO": "00BJ",
+    "LAD16NM": "Wandsworth",
+    "FID": 127
+  },
+  {
+    "LAD16CD": "E07000169",
+    "LAD16CDO": "36UH",
+    "LAD16NM": "Selby",
+    "FID": 128
+  },
+  {
+    "LAD16CD": "E06000006",
+    "LAD16CDO": "00ET",
+    "LAD16NM": "Halton",
+    "FID": 129
+  },
+  {
+    "LAD16CD": "E07000237",
+    "LAD16CDO": "47UE",
+    "LAD16NM": "Worcester",
+    "FID": 130
+  },
+  {
+    "LAD16CD": "W06000006",
+    "LAD16CDO": "00NL",
+    "LAD16NM": "Wrexham",
+    "FID": 131
+  },
+  {
+    "LAD16CD": "E07000064",
+    "LAD16CDO": "21UG",
+    "LAD16NM": "Rother",
+    "FID": 132
+  },
+  {
+    "LAD16CD": "E09000033",
+    "LAD16CDO": "00BK",
+    "LAD16NM": "Westminster",
+    "FID": 133
+  },
+  {
+    "LAD16CD": "E07000123",
+    "LAD16CDO": "30UK",
+    "LAD16NM": "Preston",
+    "FID": 134
+  },
+  {
+    "LAD16CD": "E07000170",
+    "LAD16CDO": "37UB",
+    "LAD16NM": "Ashfield",
+    "FID": 135
+  },
+  {
+    "LAD16CD": "E06000007",
+    "LAD16CDO": "00EU",
+    "LAD16NM": "Warrington",
+    "FID": 136
+  },
+  {
+    "LAD16CD": "W06000023",
+    "LAD16CDO": "00NN",
+    "LAD16NM": "Powys",
+    "FID": 137
+  },
+  {
+    "LAD16CD": "E07000238",
+    "LAD16CDO": "47UF",
+    "LAD16NM": "Wychavon",
+    "FID": 138
+  },
+  {
+    "LAD16CD": "E07000065",
+    "LAD16CDO": "21UH",
+    "LAD16NM": "Wealden",
+    "FID": 139
+  },
+  {
+    "LAD16CD": "E07000124",
+    "LAD16CDO": "30UL",
+    "LAD16NM": "Ribble Valley",
+    "FID": 140
+  },
+  {
+    "LAD16CD": "E06000050",
+    "LAD16CDO": "00EW",
+    "LAD16NM": "Cheshire West and Chester",
+    "FID": 141
+  },
+  {
+    "LAD16CD": "E08000001",
+    "LAD16CDO": "00BL",
+    "LAD16NM": "Bolton",
+    "FID": 142
+  },
+  {
+    "LAD16CD": "E07000171",
+    "LAD16CDO": "37UC",
+    "LAD16NM": "Bassetlaw",
+    "FID": 143
+  },
+  {
+    "LAD16CD": "W06000008",
+    "LAD16CDO": "00NQ",
+    "LAD16NM": "Ceredigion",
+    "FID": 144
+  },
+  {
+    "LAD16CD": "E07000125",
+    "LAD16CDO": "30UM",
+    "LAD16NM": "Rossendale",
+    "FID": 145
+  },
+  {
+    "LAD16CD": "E07000239",
+    "LAD16CDO": "47UG",
+    "LAD16NM": "Wyre Forest",
+    "FID": 146
+  },
+  {
+    "LAD16CD": "E06000008",
+    "LAD16CDO": "00EX",
+    "LAD16NM": "Blackburn with Darwen",
+    "FID": 147
+  },
+  {
+    "LAD16CD": "E07000066",
+    "LAD16CDO": "22UB",
+    "LAD16NM": "Basildon",
+    "FID": 148
+  },
+  {
+    "LAD16CD": "E08000002",
+    "LAD16CDO": "00BM",
+    "LAD16NM": "Bury",
+    "FID": 149
+  },
+  {
+    "LAD16CD": "E07000172",
+    "LAD16CDO": "37UD",
+    "LAD16NM": "Broxtowe",
+    "FID": 150
+  },
+  {
+    "LAD16CD": "W06000009",
+    "LAD16CDO": "00NS",
+    "LAD16NM": "Pembrokeshire",
+    "FID": 151
+  },
+  {
+    "LAD16CD": "S12000005",
+    "LAD16CDO": "00QF",
+    "LAD16NM": "Clackmannanshire",
+    "FID": 152
+  },
+  {
+    "LAD16CD": "E06000009",
+    "LAD16CDO": "00EY",
+    "LAD16NM": "Blackpool",
+    "FID": 153
+  },
+  {
+    "LAD16CD": "E07000067",
+    "LAD16CDO": "22UC",
+    "LAD16NM": "Braintree",
+    "FID": 154
+  },
+  {
+    "LAD16CD": "E08000003",
+    "LAD16CDO": "00BN",
+    "LAD16NM": "Manchester",
+    "FID": 155
+  },
+  {
+    "LAD16CD": "E07000126",
+    "LAD16CDO": "30UN",
+    "LAD16NM": "South Ribble",
+    "FID": 156
+  },
+  {
+    "LAD16CD": "E07000173",
+    "LAD16CDO": "37UE",
+    "LAD16NM": "Gedling",
+    "FID": 157
+  },
+  {
+    "LAD16CD": "W06000010",
+    "LAD16CDO": "00NU",
+    "LAD16NM": "Carmarthenshire",
+    "FID": 158
+  },
+  {
+    "LAD16CD": "S12000006",
+    "LAD16CDO": "00QH",
+    "LAD16NM": "Dumfries and Galloway",
+    "FID": 159
+  },
+  {
+    "LAD16CD": "E07000068",
+    "LAD16CDO": "22UD",
+    "LAD16NM": "Brentwood",
+    "FID": 160
+  },
+  {
+    "LAD16CD": "E06000010",
+    "LAD16CDO": "00FA",
+    "LAD16NM": "Kingston upon Hull, City of",
+    "FID": 161
+  },
+  {
+    "LAD16CD": "E07000174",
+    "LAD16CDO": "37UF",
+    "LAD16NM": "Mansfield",
+    "FID": 162
+  },
+  {
+    "LAD16CD": "E07000127",
+    "LAD16CDO": "30UP",
+    "LAD16NM": "West Lancashire",
+    "FID": 163
+  },
+  {
+    "LAD16CD": "E08000004",
+    "LAD16CDO": "00BP",
+    "LAD16NM": "Oldham",
+    "FID": 164
+  },
+  {
+    "LAD16CD": "W06000011",
+    "LAD16CDO": "00NX",
+    "LAD16NM": "Swansea",
+    "FID": 165
+  },
+  {
+    "LAD16CD": "S12000008",
+    "LAD16CDO": "00QK",
+    "LAD16NM": "East Ayrshire",
+    "FID": 166
+  },
+  {
+    "LAD16CD": "W06000012",
+    "LAD16CDO": "00NZ",
+    "LAD16NM": "Neath Port Talbot",
+    "FID": 167
+  },
+  {
+    "LAD16CD": "E07000069",
+    "LAD16CDO": "22UE",
+    "LAD16NM": "Castle Point",
+    "FID": 168
+  },
+  {
+    "LAD16CD": "E06000011",
+    "LAD16CDO": "00FB",
+    "LAD16NM": "East Riding of Yorkshire",
+    "FID": 169
+  },
+  {
+    "LAD16CD": "E07000128",
+    "LAD16CDO": "30UQ",
+    "LAD16NM": "Wyre",
+    "FID": 170
+  },
+  {
+    "LAD16CD": "E07000175",
+    "LAD16CDO": "37UG",
+    "LAD16NM": "Newark and Sherwood",
+    "FID": 171
+  },
+  {
+    "LAD16CD": "E08000005",
+    "LAD16CDO": "00BQ",
+    "LAD16NM": "Rochdale",
+    "FID": 172
+  },
+  {
+    "LAD16CD": "S12000010",
+    "LAD16CDO": "00QM",
+    "LAD16NM": "East Lothian",
+    "FID": 173
+  },
+  {
+    "LAD16CD": "E06000012",
+    "LAD16CDO": "00FC",
+    "LAD16NM": "North East Lincolnshire",
+    "FID": 174
+  },
+  {
+    "LAD16CD": "E07000129",
+    "LAD16CDO": "31UB",
+    "LAD16NM": "Blaby",
+    "FID": 175
+  },
+  {
+    "LAD16CD": "E07000070",
+    "LAD16CDO": "22UF",
+    "LAD16NM": "Chelmsford",
+    "FID": 176
+  },
+  {
+    "LAD16CD": "E07000176",
+    "LAD16CDO": "37UJ",
+    "LAD16NM": "Rushcliffe",
+    "FID": 177
+  },
+  {
+    "LAD16CD": "E08000006",
+    "LAD16CDO": "00BR",
+    "LAD16NM": "Salford",
+    "FID": 178
+  },
+  {
+    "LAD16CD": "W06000013",
+    "LAD16CDO": "00PB",
+    "LAD16NM": "Bridgend",
+    "FID": 179
+  },
+  {
+    "LAD16CD": "E06000013",
+    "LAD16CDO": "00FD",
+    "LAD16NM": "North Lincolnshire",
+    "FID": 180
+  },
+  {
+    "LAD16CD": "S12000011",
+    "LAD16CDO": "00QN",
+    "LAD16NM": "East Renfrewshire",
+    "FID": 181
+  },
+  {
+    "LAD16CD": "E07000130",
+    "LAD16CDO": "31UC",
+    "LAD16NM": "Charnwood",
+    "FID": 182
+  },
+  {
+    "LAD16CD": "E07000071",
+    "LAD16CDO": "22UG",
+    "LAD16NM": "Colchester",
+    "FID": 183
+  },
+  {
+    "LAD16CD": "E07000177",
+    "LAD16CDO": "38UB",
+    "LAD16NM": "Cherwell",
+    "FID": 184
+  },
+  {
+    "LAD16CD": "E08000007",
+    "LAD16CDO": "00BS",
+    "LAD16NM": "Stockport",
+    "FID": 185
+  },
+  {
+    "LAD16CD": "W06000014",
+    "LAD16CDO": "00PD",
+    "LAD16NM": "Vale of Glamorgan",
+    "FID": 186
+  },
+  {
+    "LAD16CD": "S12000013",
+    "LAD16CDO": "00RJ",
+    "LAD16NM": "Na h-Eileanan Siar",
+    "FID": 187
+  },
+  {
+    "LAD16CD": "E07000178",
+    "LAD16CDO": "38UC",
+    "LAD16NM": "Oxford",
+    "FID": 188
+  },
+  {
+    "LAD16CD": "E07000131",
+    "LAD16CDO": "31UD",
+    "LAD16NM": "Harborough",
+    "FID": 189
+  },
+  {
+    "LAD16CD": "W06000016",
+    "LAD16CDO": "00PF",
+    "LAD16NM": "Rhondda Cynon Taf",
+    "FID": 190
+  },
+  {
+    "LAD16CD": "E07000072",
+    "LAD16CDO": "22UH",
+    "LAD16NM": "Epping Forest",
+    "FID": 191
+  },
+  {
+    "LAD16CD": "E08000008",
+    "LAD16CDO": "00BT",
+    "LAD16NM": "Tameside",
+    "FID": 192
+  },
+  {
+    "LAD16CD": "E06000014",
+    "LAD16CDO": "00FF",
+    "LAD16NM": "York",
+    "FID": 193
+  },
+  {
+    "LAD16CD": "S12000014",
+    "LAD16CDO": "00QQ",
+    "LAD16NM": "Falkirk",
+    "FID": 194
+  },
+  {
+    "LAD16CD": "W06000024",
+    "LAD16CDO": "00PH",
+    "LAD16NM": "Merthyr Tydfil",
+    "FID": 195
+  },
+  {
+    "LAD16CD": "E07000073",
+    "LAD16CDO": "22UJ",
+    "LAD16NM": "Harlow",
+    "FID": 196
+  },
+  {
+    "LAD16CD": "E08000009",
+    "LAD16CDO": "00BU",
+    "LAD16NM": "Trafford",
+    "FID": 197
+  },
+  {
+    "LAD16CD": "E07000132",
+    "LAD16CDO": "31UE",
+    "LAD16NM": "Hinckley and Bosworth",
+    "FID": 198
+  },
+  {
+    "LAD16CD": "E06000015",
+    "LAD16CDO": "00FK",
+    "LAD16NM": "Derby",
+    "FID": 199
+  },
+  {
+    "LAD16CD": "E07000179",
+    "LAD16CDO": "38UD",
+    "LAD16NM": "South Oxfordshire",
+    "FID": 200
+  },
+  {
+    "LAD16CD": "S12000015",
+    "LAD16CDO": "00QR",
+    "LAD16NM": "Fife",
+    "FID": 201
+  },
+  {
+    "LAD16CD": "W06000018",
+    "LAD16CDO": "00PK",
+    "LAD16NM": "Caerphilly",
+    "FID": 202
+  },
+  {
+    "LAD16CD": "E07000074",
+    "LAD16CDO": "22UK",
+    "LAD16NM": "Maldon",
+    "FID": 203
+  },
+  {
+    "LAD16CD": "E07000133",
+    "LAD16CDO": "31UG",
+    "LAD16NM": "Melton",
+    "FID": 204
+  },
+  {
+    "LAD16CD": "E06000016",
+    "LAD16CDO": "00FN",
+    "LAD16NM": "Leicester",
+    "FID": 205
+  },
+  {
+    "LAD16CD": "E07000180",
+    "LAD16CDO": "38UE",
+    "LAD16NM": "Vale of White Horse",
+    "FID": 206
+  },
+  {
+    "LAD16CD": "E08000010",
+    "LAD16CDO": "00BW",
+    "LAD16NM": "Wigan",
+    "FID": 207
+  },
+  {
+    "LAD16CD": "S12000017",
+    "LAD16CDO": "00QT",
+    "LAD16NM": "Highland",
+    "FID": 208
+  },
+  {
+    "LAD16CD": "E06000017",
+    "LAD16CDO": "00FP",
+    "LAD16NM": "Rutland",
+    "FID": 209
+  },
+  {
+    "LAD16CD": "E07000075",
+    "LAD16CDO": "22UL",
+    "LAD16NM": "Rochford",
+    "FID": 210
+  },
+  {
+    "LAD16CD": "E07000181",
+    "LAD16CDO": "38UF",
+    "LAD16NM": "West Oxfordshire",
+    "FID": 211
+  },
+  {
+    "LAD16CD": "E07000134",
+    "LAD16CDO": "31UH",
+    "LAD16NM": "North West Leicestershire",
+    "FID": 212
+  },
+  {
+    "LAD16CD": "E08000011",
+    "LAD16CDO": "00BX",
+    "LAD16NM": "Knowsley",
+    "FID": 213
+  },
+  {
+    "LAD16CD": "W06000019",
+    "LAD16CDO": "00PL",
+    "LAD16NM": "Blaenau Gwent",
+    "FID": 214
+  },
+  {
+    "LAD16CD": "S12000018",
+    "LAD16CDO": "00QU",
+    "LAD16NM": "Inverclyde",
+    "FID": 215
+  },
+  {
+    "LAD16CD": "E06000018",
+    "LAD16CDO": "00FY",
+    "LAD16NM": "Nottingham",
+    "FID": 216
+  },
+  {
+    "LAD16CD": "E07000076",
+    "LAD16CDO": "22UN",
+    "LAD16NM": "Tendring",
+    "FID": 217
+  },
+  {
+    "LAD16CD": "E08000012",
+    "LAD16CDO": "00BY",
+    "LAD16NM": "Liverpool",
+    "FID": 218
+  },
+  {
+    "LAD16CD": "W06000020",
+    "LAD16CDO": "00PM",
+    "LAD16NM": "Torfaen",
+    "FID": 219
+  },
+  {
+    "LAD16CD": "E07000135",
+    "LAD16CDO": "31UJ",
+    "LAD16NM": "Oadby and Wigston",
+    "FID": 220
+  },
+  {
+    "LAD16CD": "E07000187",
+    "LAD16CDO": "40UB",
+    "LAD16NM": "Mendip",
+    "FID": 221
+  },
+  {
+    "LAD16CD": "S12000019",
+    "LAD16CDO": "00QW",
+    "LAD16NM": "Midlothian",
+    "FID": 222
+  },
+  {
+    "LAD16CD": "E06000019",
+    "LAD16CDO": "00GA",
+    "LAD16NM": "Herefordshire, County of",
+    "FID": 223
+  },
+  {
+    "LAD16CD": "E07000077",
+    "LAD16CDO": "22UQ",
+    "LAD16NM": "Uttlesford",
+    "FID": 224
+  },
+  {
+    "LAD16CD": "E07000188",
+    "LAD16CDO": "40UC",
+    "LAD16NM": "Sedgemoor",
+    "FID": 225
+  },
+  {
+    "LAD16CD": "E07000136",
+    "LAD16CDO": "32UB",
+    "LAD16NM": "Boston",
+    "FID": 226
+  },
+  {
+    "LAD16CD": "E08000013",
+    "LAD16CDO": "00BZ",
+    "LAD16NM": "St. Helens",
+    "FID": 227
+  },
+  {
+    "LAD16CD": "W06000021",
+    "LAD16CDO": "00PP",
+    "LAD16NM": "Monmouthshire",
+    "FID": 228
+  },
+  {
+    "LAD16CD": "S12000020",
+    "LAD16CDO": "00QX",
+    "LAD16NM": "Moray",
+    "FID": 229
+  },
+  {
+    "LAD16CD": "E06000020",
+    "LAD16CDO": "00GF",
+    "LAD16NM": "Telford and Wrekin",
+    "FID": 230
+  },
+  {
+    "LAD16CD": "E07000078",
+    "LAD16CDO": "23UB",
+    "LAD16NM": "Cheltenham",
+    "FID": 231
+  },
+  {
+    "LAD16CD": "E07000137",
+    "LAD16CDO": "32UC",
+    "LAD16NM": "East Lindsey",
+    "FID": 232
+  },
+  {
+    "LAD16CD": "E08000014",
+    "LAD16CDO": "00CA",
+    "LAD16NM": "Sefton",
+    "FID": 233
+  },
+  {
+    "LAD16CD": "E07000189",
+    "LAD16CDO": "40UD",
+    "LAD16NM": "South Somerset",
+    "FID": 234
+  },
+  {
+    "LAD16CD": "W06000022",
+    "LAD16CDO": "00PR",
+    "LAD16NM": "Newport",
+    "FID": 235
+  },
+  {
+    "LAD16CD": "S12000021",
+    "LAD16CDO": "00QY",
+    "LAD16NM": "North Ayrshire",
+    "FID": 236
+  },
+  {
+    "LAD16CD": "E06000051",
+    "LAD16CDO": "00GG",
+    "LAD16NM": "Shropshire",
+    "FID": 237
+  },
+  {
+    "LAD16CD": "E07000138",
+    "LAD16CDO": "32UD",
+    "LAD16NM": "Lincoln",
+    "FID": 238
+  },
+  {
+    "LAD16CD": "E08000015",
+    "LAD16CDO": "00CB",
+    "LAD16NM": "Wirral",
+    "FID": 239
+  },
+  {
+    "LAD16CD": "E07000079",
+    "LAD16CDO": "23UC",
+    "LAD16NM": "Cotswold",
+    "FID": 240
+  },
+  {
+    "LAD16CD": "W06000015",
+    "LAD16CDO": "00PT",
+    "LAD16NM": "Cardiff",
+    "FID": 241
+  },
+  {
+    "LAD16CD": "E07000190",
+    "LAD16CDO": "40UE",
+    "LAD16NM": "Taunton Deane",
+    "FID": 242
+  },
+  {
+    "LAD16CD": "S12000023",
+    "LAD16CDO": "00RA",
+    "LAD16NM": "Orkney Islands",
+    "FID": 243
+  },
+  {
+    "LAD16CD": "E06000021",
+    "LAD16CDO": "00GL",
+    "LAD16NM": "Stoke-on-Trent",
+    "FID": 244
+  },
+  {
+    "LAD16CD": "E07000080",
+    "LAD16CDO": "23UD",
+    "LAD16NM": "Forest of Dean",
+    "FID": 245
+  },
+  {
+    "LAD16CD": "E08000016",
+    "LAD16CDO": "00CC",
+    "LAD16NM": "Barnsley",
+    "FID": 246
+  },
+  {
+    "LAD16CD": "E07000139",
+    "LAD16CDO": "32UE",
+    "LAD16NM": "North Kesteven",
+    "FID": 247
+  },
+  {
+    "LAD16CD": "E07000191",
+    "LAD16CDO": "40UF",
+    "LAD16NM": "West Somerset",
+    "FID": 248
+  },
+  {
+    "LAD16CD": "E07000004",
+    "LAD16CDO": "11UB",
+    "LAD16NM": "Aylesbury Vale",
+    "FID": 249
+  },
+  {
+    "LAD16CD": "S12000024",
+    "LAD16CDO": "00RB",
+    "LAD16NM": "Perth and Kinross",
+    "FID": 250
+  },
+  {
+    "LAD16CD": "E06000022",
+    "LAD16CDO": "00HA",
+    "LAD16NM": "Bath and North East Somerset",
+    "FID": 251
+  },
+  {
+    "LAD16CD": "E07000081",
+    "LAD16CDO": "23UE",
+    "LAD16NM": "Gloucester",
+    "FID": 252
+  },
+  {
+    "LAD16CD": "E08000017",
+    "LAD16CDO": "00CE",
+    "LAD16NM": "Doncaster",
+    "FID": 253
+  },
+  {
+    "LAD16CD": "E07000140",
+    "LAD16CDO": "32UF",
+    "LAD16NM": "South Holland",
+    "FID": 254
+  },
+  {
+    "LAD16CD": "E07000192",
+    "LAD16CDO": "41UB",
+    "LAD16NM": "Cannock Chase",
+    "FID": 255
+  },
+  {
+    "LAD16CD": "E07000005",
+    "LAD16CDO": "11UC",
+    "LAD16NM": "Chiltern",
+    "FID": 256
+  },
+  {
+    "LAD16CD": "S12000026",
+    "LAD16CDO": "00QE",
+    "LAD16NM": "Scottish Borders",
+    "FID": 257
+  },
+  {
+    "LAD16CD": "E07000082",
+    "LAD16CDO": "23UF",
+    "LAD16NM": "Stroud",
+    "FID": 258
+  },
+  {
+    "LAD16CD": "E06000023",
+    "LAD16CDO": "00HB",
+    "LAD16NM": "Bristol, City of",
+    "FID": 259
+  },
+  {
+    "LAD16CD": "E08000018",
+    "LAD16CDO": "00CF",
+    "LAD16NM": "Rotherham",
+    "FID": 260
+  },
+  {
+    "LAD16CD": "E07000193",
+    "LAD16CDO": "41UC",
+    "LAD16NM": "East Staffordshire",
+    "FID": 261
+  },
+  {
+    "LAD16CD": "E07000141",
+    "LAD16CDO": "32UG",
+    "LAD16NM": "South Kesteven",
+    "FID": 262
+  },
+  {
+    "LAD16CD": "E07000006",
+    "LAD16CDO": "11UE",
+    "LAD16NM": "South Bucks",
+    "FID": 263
+  },
+  {
+    "LAD16CD": "S12000027",
+    "LAD16CDO": "00RD",
+    "LAD16NM": "Shetland Islands",
+    "FID": 264
+  },
+  {
+    "LAD16CD": "E07000142",
+    "LAD16CDO": "32UH",
+    "LAD16NM": "West Lindsey",
+    "FID": 265
+  },
+  {
+    "LAD16CD": "E07000007",
+    "LAD16CDO": "11UF",
+    "LAD16NM": "Wycombe",
+    "FID": 266
+  },
+  {
+    "LAD16CD": "E08000019",
+    "LAD16CDO": "00CG",
+    "LAD16NM": "Sheffield",
+    "FID": 267
+  },
+  {
+    "LAD16CD": "E07000083",
+    "LAD16CDO": "23UG",
+    "LAD16NM": "Tewkesbury",
+    "FID": 268
+  },
+  {
+    "LAD16CD": "E07000194",
+    "LAD16CDO": "41UD",
+    "LAD16NM": "Lichfield",
+    "FID": 269
+  },
+  {
+    "LAD16CD": "E06000024",
+    "LAD16CDO": "00HC",
+    "LAD16NM": "North Somerset",
+    "FID": 270
+  },
+  {
+    "LAD16CD": "S12000028",
+    "LAD16CDO": "00RE",
+    "LAD16NM": "South Ayrshire",
+    "FID": 271
+  },
+  {
+    "LAD16CD": "E07000143",
+    "LAD16CDO": "33UB",
+    "LAD16NM": "Breckland",
+    "FID": 272
+  },
+  {
+    "LAD16CD": "E07000008",
+    "LAD16CDO": "12UB",
+    "LAD16NM": "Cambridge",
+    "FID": 273
+  },
+  {
+    "LAD16CD": "E07000084",
+    "LAD16CDO": "24UB",
+    "LAD16NM": "Basingstoke and Deane",
+    "FID": 274
+  },
+  {
+    "LAD16CD": "E08000037",
+    "LAD16CDO": "00CH",
+    "LAD16NM": "Gateshead",
+    "FID": 275
+  },
+  {
+    "LAD16CD": "E07000195",
+    "LAD16CDO": "41UE",
+    "LAD16NM": "Newcastle-under-Lyme",
+    "FID": 276
+  },
+  {
+    "LAD16CD": "E06000025",
+    "LAD16CDO": "00HD",
+    "LAD16NM": "South Gloucestershire",
+    "FID": 277
+  },
+  {
+    "LAD16CD": "S12000029",
+    "LAD16CDO": "00RF",
+    "LAD16NM": "South Lanarkshire",
+    "FID": 278
+  },
+  {
+    "LAD16CD": "E07000144",
+    "LAD16CDO": "33UC",
+    "LAD16NM": "Broadland",
+    "FID": 279
+  },
+  {
+    "LAD16CD": "E07000009",
+    "LAD16CDO": "12UC",
+    "LAD16NM": "East Cambridgeshire",
+    "FID": 280
+  },
+  {
+    "LAD16CD": "E06000052",
+    "LAD16CDO": "00HE",
+    "LAD16NM": "Cornwall",
+    "FID": 281
+  },
+  {
+    "LAD16CD": "E07000085",
+    "LAD16CDO": "24UC",
+    "LAD16NM": "East Hampshire",
+    "FID": 282
+  },
+  {
+    "LAD16CD": "E07000196",
+    "LAD16CDO": "41UF",
+    "LAD16NM": "South Staffordshire",
+    "FID": 283
+  },
+  {
+    "LAD16CD": "E08000021",
+    "LAD16CDO": "00CJ",
+    "LAD16NM": "Newcastle upon Tyne",
+    "FID": 284
+  },
+  {
+    "LAD16CD": "S12000030",
+    "LAD16CDO": "00RG",
+    "LAD16NM": "Stirling",
+    "FID": 285
+  },
+  {
+    "LAD16CD": "E07000197",
+    "LAD16CDO": "41UG",
+    "LAD16NM": "Stafford",
+    "FID": 286
+  },
+  {
+    "LAD16CD": "E07000086",
+    "LAD16CDO": "24UD",
+    "LAD16NM": "Eastleigh",
+    "FID": 287
+  },
+  {
+    "LAD16CD": "E08000022",
+    "LAD16CDO": "00CK",
+    "LAD16NM": "North Tyneside",
+    "FID": 288
+  },
+  {
+    "LAD16CD": "E07000145",
+    "LAD16CDO": "33UD",
+    "LAD16NM": "Great Yarmouth",
+    "FID": 289
+  },
+  {
+    "LAD16CD": "E07000010",
+    "LAD16CDO": "12UD",
+    "LAD16NM": "Fenland",
+    "FID": 290
+  },
+  {
+    "LAD16CD": "E06000053",
+    "LAD16CDO": "00HF",
+    "LAD16NM": "Isles of Scilly",
+    "FID": 291
+  },
+  {
+    "LAD16CD": "S12000033",
+    "LAD16CDO": "00QA",
+    "LAD16NM": "Aberdeen City",
+    "FID": 292
+  },
+  {
+    "LAD16CD": "E07000198",
+    "LAD16CDO": "41UH",
+    "LAD16NM": "Staffordshire Moorlands",
+    "FID": 293
+  },
+  {
+    "LAD16CD": "E07000087",
+    "LAD16CDO": "24UE",
+    "LAD16NM": "Fareham",
+    "FID": 294
+  },
+  {
+    "LAD16CD": "E08000023",
+    "LAD16CDO": "00CL",
+    "LAD16NM": "South Tyneside",
+    "FID": 295
+  },
+  {
+    "LAD16CD": "E07000146",
+    "LAD16CDO": "33UE",
+    "LAD16NM": "King's Lynn and West Norfolk",
+    "FID": 296
+  },
+  {
+    "LAD16CD": "E07000011",
+    "LAD16CDO": "12UE",
+    "LAD16NM": "Huntingdonshire",
+    "FID": 297
+  },
+  {
+    "LAD16CD": "E06000026",
+    "LAD16CDO": "00HG",
+    "LAD16NM": "Plymouth",
+    "FID": 298
+  },
+  {
+    "LAD16CD": "S12000034",
+    "LAD16CDO": "00QB",
+    "LAD16NM": "Aberdeenshire",
+    "FID": 299
+  },
+  {
+    "LAD16CD": "E07000199",
+    "LAD16CDO": "41UK",
+    "LAD16NM": "Tamworth",
+    "FID": 300
+  },
+  {
+    "LAD16CD": "E07000012",
+    "LAD16CDO": "12UG",
+    "LAD16NM": "South Cambridgeshire",
+    "FID": 301
+  },
+  {
+    "LAD16CD": "E07000147",
+    "LAD16CDO": "33UF",
+    "LAD16NM": "North Norfolk",
+    "FID": 302
+  },
+  {
+    "LAD16CD": "E07000088",
+    "LAD16CDO": "24UF",
+    "LAD16NM": "Gosport",
+    "FID": 303
+  },
+  {
+    "LAD16CD": "E06000027",
+    "LAD16CDO": "00HH",
+    "LAD16NM": "Torbay",
+    "FID": 304
+  },
+  {
+    "LAD16CD": "S12000035",
+    "LAD16CDO": "00QD",
+    "LAD16NM": "Argyll and Bute",
+    "FID": 305
+  },
+  {
+    "LAD16CD": "E07000200",
+    "LAD16CDO": "42UB",
+    "LAD16NM": "Babergh",
+    "FID": 306
+  },
+  {
+    "LAD16CD": "E07000148",
+    "LAD16CDO": "33UG",
+    "LAD16NM": "Norwich",
+    "FID": 307
+  },
+  {
+    "LAD16CD": "E07000026",
+    "LAD16CDO": "16UB",
+    "LAD16NM": "Allerdale",
+    "FID": 308
+  },
+  {
+    "LAD16CD": "E07000089",
+    "LAD16CDO": "24UG",
+    "LAD16NM": "Hart",
+    "FID": 309
+  },
+  {
+    "LAD16CD": "E06000028",
+    "LAD16CDO": "00HN",
+    "LAD16NM": "Bournemouth",
+    "FID": 310
+  },
+  {
+    "LAD16CD": "S12000036",
+    "LAD16CDO": "00QP",
+    "LAD16NM": "City of Edinburgh",
+    "FID": 311
+  },
+  {
+    "LAD16CD": "E07000201",
+    "LAD16CDO": "42UC",
+    "LAD16NM": "Forest Heath",
+    "FID": 312
+  },
+  {
+    "LAD16CD": "E07000149",
+    "LAD16CDO": "33UH",
+    "LAD16NM": "South Norfolk",
+    "FID": 313
+  },
+  {
+    "LAD16CD": "E06000029",
+    "LAD16CDO": "00HP",
+    "LAD16NM": "Poole",
+    "FID": 314
+  },
+  {
+    "LAD16CD": "E07000090",
+    "LAD16CDO": "24UH",
+    "LAD16NM": "Havant",
+    "FID": 315
+  },
+  {
+    "LAD16CD": "E07000027",
+    "LAD16CDO": "16UC",
+    "LAD16NM": "Barrow-in-Furness",
+    "FID": 316
+  },
+  {
+    "LAD16CD": "S12000038",
+    "LAD16CDO": "00RC",
+    "LAD16NM": "Renfrewshire",
+    "FID": 317
+  },
+  {
+    "LAD16CD": "E07000150",
+    "LAD16CDO": "34UB",
+    "LAD16NM": "Corby",
+    "FID": 318
+  },
+  {
+    "LAD16CD": "E07000202",
+    "LAD16CDO": "42UD",
+    "LAD16NM": "Ipswich",
+    "FID": 319
+  },
+  {
+    "LAD16CD": "E07000028",
+    "LAD16CDO": "16UD",
+    "LAD16NM": "Carlisle",
+    "FID": 320
+  },
+  {
+    "LAD16CD": "E07000091",
+    "LAD16CDO": "24UJ",
+    "LAD16NM": "New Forest",
+    "FID": 321
+  },
+  {
+    "LAD16CD": "E06000030",
+    "LAD16CDO": "00HX",
+    "LAD16NM": "Swindon",
+    "FID": 322
+  },
+  {
+    "LAD16CD": "S12000039",
+    "LAD16CDO": "00QG",
+    "LAD16NM": "West Dunbartonshire",
+    "FID": 323
+  },
+  {
+    "LAD16CD": "E07000151",
+    "LAD16CDO": "34UC",
+    "LAD16NM": "Daventry",
+    "FID": 324
+  },
+  {
+    "LAD16CD": "E07000203",
+    "LAD16CDO": "42UE",
+    "LAD16NM": "Mid Suffolk",
+    "FID": 325
+  },
+  {
+    "LAD16CD": "E07000092",
+    "LAD16CDO": "24UL",
+    "LAD16NM": "Rushmoor",
+    "FID": 326
+  },
+  {
+    "LAD16CD": "E07000029",
+    "LAD16CDO": "16UE",
+    "LAD16NM": "Copeland",
+    "FID": 327
+  },
+  {
+    "LAD16CD": "E06000054",
+    "LAD16CDO": "00HY",
+    "LAD16NM": "Wiltshire",
+    "FID": 328
+  },
+  {
+    "LAD16CD": "S12000040",
+    "LAD16CDO": "00RH",
+    "LAD16NM": "West Lothian",
+    "FID": 329
+  },
+  {
+    "LAD16CD": "E07000204",
+    "LAD16CDO": "42UF",
+    "LAD16NM": "St Edmundsbury",
+    "FID": 330
+  },
+  {
+    "LAD16CD": "E07000152",
+    "LAD16CDO": "34UD",
+    "LAD16NM": "East Northamptonshire",
+    "FID": 331
+  },
+  {
+    "LAD16CD": "E07000093",
+    "LAD16CDO": "24UN",
+    "LAD16NM": "Test Valley",
+    "FID": 332
+  },
+  {
+    "LAD16CD": "E07000030",
+    "LAD16CDO": "16UF",
+    "LAD16NM": "Eden",
+    "FID": 333
+  },
+  {
+    "LAD16CD": "E06000031",
+    "LAD16CDO": "00JA",
+    "LAD16NM": "Peterborough",
+    "FID": 334
+  },
+  {
+    "LAD16CD": "S12000041",
+    "LAD16CDO": "00QC",
+    "LAD16NM": "Angus",
+    "FID": 335
+  },
+  {
+    "LAD16CD": "E07000153",
+    "LAD16CDO": "34UE",
+    "LAD16NM": "Kettering",
+    "FID": 336
+  },
+  {
+    "LAD16CD": "E07000205",
+    "LAD16CDO": "42UG",
+    "LAD16NM": "Suffolk Coastal",
+    "FID": 337
+  },
+  {
+    "LAD16CD": "E07000031",
+    "LAD16CDO": "16UG",
+    "LAD16NM": "South Lakeland",
+    "FID": 338
+  },
+  {
+    "LAD16CD": "E07000094",
+    "LAD16CDO": "24UP",
+    "LAD16NM": "Winchester",
+    "FID": 339
+  },
+  {
+    "LAD16CD": "E06000032",
+    "LAD16CDO": "00KA",
+    "LAD16NM": "Luton",
+    "FID": 340
+  },
+  {
+    "LAD16CD": "S12000042",
+    "LAD16CDO": "00QJ",
+    "LAD16NM": "Dundee City",
+    "FID": 341
+  },
+  {
+    "LAD16CD": "E07000154",
+    "LAD16CDO": "34UF",
+    "LAD16NM": "Northampton",
+    "FID": 342
+  },
+  {
+    "LAD16CD": "E07000206",
+    "LAD16CDO": "42UH",
+    "LAD16NM": "Waveney",
+    "FID": 343
+  },
+  {
+    "LAD16CD": "E06000055",
+    "LAD16CDO": "00KB",
+    "LAD16NM": "Bedford",
+    "FID": 344
+  },
+  {
+    "LAD16CD": "E07000095",
+    "LAD16CDO": "26UB",
+    "LAD16NM": "Broxbourne",
+    "FID": 345
+  },
+  {
+    "LAD16CD": "E07000032",
+    "LAD16CDO": "17UB",
+    "LAD16NM": "Amber Valley",
+    "FID": 346
+  },
+  {
+    "LAD16CD": "S12000044",
+    "LAD16CDO": "00QZ",
+    "LAD16NM": "North Lanarkshire",
+    "FID": 347
+  },
+  {
+    "LAD16CD": "E07000207",
+    "LAD16CDO": "43UB",
+    "LAD16NM": "Elmbridge",
+    "FID": 348
+  },
+  {
+    "LAD16CD": "E07000155",
+    "LAD16CDO": "34UG",
+    "LAD16NM": "South Northamptonshire",
+    "FID": 349
+  },
+  {
+    "LAD16CD": "E07000096",
+    "LAD16CDO": "26UC",
+    "LAD16NM": "Dacorum",
+    "FID": 350
+  },
+  {
+    "LAD16CD": "E06000056",
+    "LAD16CDO": "00KC",
+    "LAD16NM": "Central Bedfordshire",
+    "FID": 351
+  },
+  {
+    "LAD16CD": "E07000033",
+    "LAD16CDO": "17UC",
+    "LAD16NM": "Bolsover",
+    "FID": 352
+  },
+  {
+    "LAD16CD": "S12000045",
+    "LAD16CDO": "00QL",
+    "LAD16NM": "East Dunbartonshire",
+    "FID": 353
+  },
+  {
+    "LAD16CD": "E07000156",
+    "LAD16CDO": "34UH",
+    "LAD16NM": "Wellingborough",
+    "FID": 354
+  },
+  {
+    "LAD16CD": "E07000242",
+    "LAD16CDO": "26UD",
+    "LAD16NM": "East Hertfordshire",
+    "FID": 355
+  },
+  {
+    "LAD16CD": "E06000033",
+    "LAD16CDO": "00KF",
+    "LAD16NM": "Southend-on-Sea",
+    "FID": 356
+  },
+  {
+    "LAD16CD": "E07000034",
+    "LAD16CDO": "17UD",
+    "LAD16NM": "Chesterfield",
+    "FID": 357
+  },
+  {
+    "LAD16CD": "E07000208",
+    "LAD16CDO": "43UC",
+    "LAD16NM": "Epsom and Ewell",
+    "FID": 358
+  },
+  {
+    "LAD16CD": "S12000046",
+    "LAD16CDO": "00QS",
+    "LAD16NM": "Glasgow City",
+    "FID": 359
+  },
+  {
+    "LAD16CD": "E07000098",
+    "LAD16CDO": "26UE",
+    "LAD16NM": "Hertsmere",
+    "FID": 360
+  },
+  {
+    "LAD16CD": "E07000035",
+    "LAD16CDO": "17UF",
+    "LAD16NM": "Derbyshire Dales",
+    "FID": 361
+  },
+  {
+    "LAD16CD": "E07000209",
+    "LAD16CDO": "43UD",
+    "LAD16NM": "Guildford",
+    "FID": 362
+  },
+  {
+    "LAD16CD": "N09000001",
+    "LAD16CDO": "N09000001",
+    "LAD16NM": "Antrim and Newtownabbey",
+    "FID": 363
+  },
+  {
+    "LAD16CD": "E07000099",
+    "LAD16CDO": "26UF",
+    "LAD16NM": "North Hertfordshire",
+    "FID": 364
+  },
+  {
+    "LAD16CD": "E07000210",
+    "LAD16CDO": "43UE",
+    "LAD16NM": "Mole Valley",
+    "FID": 365
+  },
+  {
+    "LAD16CD": "E07000036",
+    "LAD16CDO": "17UG",
+    "LAD16NM": "Erewash",
+    "FID": 366
+  },
+  {
+    "LAD16CD": "N09000002",
+    "LAD16CDO": "N09000002",
+    "LAD16NM": "Armagh City, Banbridge and Craigavon",
+    "FID": 367
+  },
+  {
+    "LAD16CD": "E07000240",
+    "LAD16CDO": "26UG",
+    "LAD16NM": "St Albans",
+    "FID": 368
+  },
+  {
+    "LAD16CD": "E07000037",
+    "LAD16CDO": "17UH",
+    "LAD16NM": "High Peak",
+    "FID": 369
+  },
+  {
+    "LAD16CD": "E07000211",
+    "LAD16CDO": "43UF",
+    "LAD16NM": "Reigate and Banstead",
+    "FID": 370
+  },
+  {
+    "LAD16CD": "N09000003",
+    "LAD16CDO": "N09000003",
+    "LAD16NM": "Belfast",
+    "FID": 371
+  },
+  {
+    "LAD16CD": "N09000004",
+    "LAD16CDO": "N09000004",
+    "LAD16NM": "Causeway Coast and Glens",
+    "FID": 372
+  },
+  {
+    "LAD16CD": "E07000212",
+    "LAD16CDO": "43UG",
+    "LAD16NM": "Runnymede",
+    "FID": 373
+  },
+  {
+    "LAD16CD": "N09000005",
+    "LAD16CDO": "N09000005",
+    "LAD16NM": "Derry City and Strabane",
+    "FID": 374
+  },
+  {
+    "LAD16CD": "E07000213",
+    "LAD16CDO": "43UH",
+    "LAD16NM": "Spelthorne",
+    "FID": 375
+  },
+  {
+    "LAD16CD": "N09000006",
+    "LAD16CDO": "N09000006",
+    "LAD16NM": "Fermanagh and Omagh",
+    "FID": 376
+  },
+  {
+    "LAD16CD": "E07000214",
+    "LAD16CDO": "43UJ",
+    "LAD16NM": "Surrey Heath",
+    "FID": 377
+  },
+  {
+    "LAD16CD": "N09000007",
+    "LAD16CDO": "N09000007",
+    "LAD16NM": "Lisburn and Castlereagh",
+    "FID": 378
+  },
+  {
+    "LAD16CD": "E07000215",
+    "LAD16CDO": "43UK",
+    "LAD16NM": "Tandridge",
+    "FID": 379
+  },
+  {
+    "LAD16CD": "N09000008",
+    "LAD16CDO": "N09000008",
+    "LAD16NM": "Mid and East Antrim",
+    "FID": 380
+  },
+  {
+    "LAD16CD": "E07000216",
+    "LAD16CDO": "43UL",
+    "LAD16NM": "Waverley",
+    "FID": 381
+  },
+  {
+    "LAD16CD": "N09000009",
+    "LAD16CDO": "N09000009",
+    "LAD16NM": "Mid Ulster",
+    "FID": 382
+  },
+  {
+    "LAD16CD": "E07000217",
+    "LAD16CDO": "43UM",
+    "LAD16NM": "Woking",
+    "FID": 383
+  },
+  {
+    "LAD16CD": "N09000010",
+    "LAD16CDO": "N09000010",
+    "LAD16NM": "Newry, Mourne and Down",
+    "FID": 384
+  },
+  {
+    "LAD16CD": "E07000218",
+    "LAD16CDO": "44UB",
+    "LAD16NM": "North Warwickshire",
+    "FID": 385
+  },
+  {
+    "LAD16CD": "N09000011",
+    "LAD16CDO": "N09000011",
+    "LAD16NM": "Ards and North Down",
+    "FID": 386
+  },
+  {
+    "LAD16CD": "E07000219",
+    "LAD16CDO": "44UC",
+    "LAD16NM": "Nuneaton and Bedworth",
+    "FID": 387
+  },
+  {
+    "LAD16CD": "E07000220",
+    "LAD16CDO": "44UD",
+    "LAD16NM": "Rugby",
+    "FID": 388
+  },
+  {
+    "LAD16CD": "E07000221",
+    "LAD16CDO": "44UE",
+    "LAD16NM": "Stratford-on-Avon",
+    "FID": 389
+  },
+  {
+    "LAD16CD": "E07000222",
+    "LAD16CDO": "44UF",
+    "LAD16NM": "Warwick",
+    "FID": 390
+  },
+  {
+    "LAD16CD": "E07000223",
+    "LAD16CDO": "45UB",
+    "LAD16NM": "Adur",
+    "FID": 391
+  }
+]

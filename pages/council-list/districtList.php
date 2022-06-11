@@ -16,15 +16,24 @@
     </header>
     <main id='districtList'>
       <script>
-          var colours = ["red", "green", "orange", "blue", "purple"]
-          var numCouncils = 900
+          var councilNames = []
+          var numCouncils = 0
+          fetch('/assets/outputAreas/CouncilCodes.json')
+            .then(function(response) {
+              response.json()
+            })
+            .then(function(data){
+              numCouncils = data.length
+              for (let i = 0; i < data.length; i++){
+                councilNames[i] = data[i].LAD16NM
+              }
+            })
           for (let i = 0; i < numCouncils; i++){
             var number = String(i);
             var boundaryId = "council" + number;
             const boundaryInfoBox = document.createElement("button");
             boundaryInfoBox.setAttribute('id',boundaryId)
-            const textAdd = document.createTextNode(number);
-            const textAddPop = document.createTextNode(populations2[i]);
+            const textAdd = document.createTextNode(councilName[i]);
             boundaryInfoBox.appendChild(textAdd);
             const element = document.getElementById("districtList");
             element.appendChild(boundaryInfoBox);

@@ -25,7 +25,7 @@
           <script>
             var councilDirectory = []
             var NE = ["E06000001", "E06000002", "E06000003", "E06000004","E06000005", "E06000047", "E06000048", 'E08000020', 'E08000021', 'E08000022', 'E08000023', 'E08000024']
-            var councils = ["E06000024","E06000022","E06000023","E06000025"]
+            var councils = ["E08000009"]
             var pop = calculateTotalPopulation(councils)
             console.log(pop)
             var newData
@@ -41,6 +41,8 @@
             for (let i = 0; i < councilDirectory.length; i++){
               renderMap(map, councilDirectory[i], colours)
             }
+            pop = calculateTotalPopulation(councils)
+            console.log(pop)
           </script>
         </section>
       </main>
