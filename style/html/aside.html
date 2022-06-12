@@ -22,7 +22,7 @@
       return quota
     }
       var populationTotal
-      var councils = ["E06000024"]
+      var councils = ["E08000004"]
       var colours
       var councilDirectory = []
       for (let i = 0; i < councils.length; i++){
@@ -34,7 +34,7 @@
           console.log(populationTotal)
           //temporary remove when possible
           var defaultPallete = ['#00009C','#42D700','#CDCD00','#00009C','#AF009B','#B90000','#6100A6','#00DB15','#C33800','#82FF50','#00DBAB','#007FDA','#0000D8','#8A0DE4','#EF1BC1','#F9283C','#FF7335','#FFFF42','#5DFF5D','#6AFFED','#77C7FF','#8585FF']
-          var numDistricts = 46
+          var numDistricts = 20
           //0 and numDistricts only tempaory(replace with number of seats once applicable)
           var quota = populationPerDistrict(populationTotal, numDistricts, 1)
           //---
@@ -153,21 +153,6 @@
           for (let i = 0; i < councilDirectory.length; i++){
             renderMap(map, councilDirectory[i], colours, quota)
           }
-          info.onAdd = function (map) {
-              this._div = L.DomUtil.create('div', 'info');
-              this.update();
-              return this._div;
-          };
-          info.addTo(map);
-          // Disable dragging when user's cursor enters the element
-            info.getContainer().addEventListener('mouseover', function () {
-                map.dragging.disable();
-            });
-
-            // Re-enable dragging when user's cursor leaves the element
-            info.getContainer().addEventListener('mouseout', function () {
-                map.dragging.enable();
-            });
       })
   </script>
 </main>

@@ -12,18 +12,17 @@
     <script src="https://d3js.org/d3.v7.min.js"></script>
   </head>
   <header>
-    <?php include "./style/html/headerfile.html"?>
+    <?php
+    $path = $_SERVER['DOCUMENT_ROOT'];
+    $path .= "\style\html\headerfile.html";
+    include $path
+    ?>
   </header>
   <body>
     <main>
       <aside>
-        <?php include "./style/html/aside.html"?>
       </aside>
         <section>
-          <div id="map"></div>
-          <script src="/scripts/mapEvents.js"></script>
-          <script>
-          </script>
         </section>
       </main>
   </body>

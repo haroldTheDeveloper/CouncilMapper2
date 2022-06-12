@@ -21,7 +21,7 @@ const populationDis = function(District_ID){
 const colourSeat = function(layer, colours){
   colour = colours[Constituency_ID]
   console.log(colours)
-  layer.setStyle({fillColor:colour, weight: 0, fillOpacity: 0.4})
+  layer.setStyle({fillColor:colour, color:colour, weight: 0.6, fillOpacity: 0.7})
   if (Constituency_ID == 0){
     layer.setStyle({fillColor:colour, weight: 1, fillOpacity: 0})
   }
@@ -59,7 +59,7 @@ const renderMap = function(map, councilDirectory, colours, quota){
     })
     .then(function(data) {
       var count = 0
-        L.geoJSON(data, {fillColor:'lightgrey', weight: 1, color: 'black', fillOpacity: 0.7}).on('mouseover', function(e){
+        L.geoJSON(data, {fillColor:'lightgrey', weight: 1, color: 'black', fillOpacity: 0.7, draggable: false}).on('mouseover', function(e){
           var layer = e.sourceTarget;
           layer.setStyle({ fillOpacity: 0.9})
         }).on('mouseout', function(e){
