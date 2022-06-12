@@ -4,6 +4,7 @@
 <main class="map-Aside">
   <div id="bottom-Aside">
   </div>
+  <script src="/scripts/mapEvents.js"></script>
   <script>
     Constituency_ID = 0;
     populationID = 0;
@@ -16,66 +17,157 @@
         var newConstituency_ID = tempNumber2;
       return newConstituency_ID
     }
-      var numDistricts = 46
-      var colours = []
-      for (let i = 0; i < numDistricts; i++){
-        var randomColor = Math.floor(Math.random()*16777215).toString(16);
-        colours[i] = '#' + randomColor
+    const populationPerDistrict = function(populationTotal, numberSeats, seats){
+      quota = (populationTotal/numberSeats)*seats
+      return quota
+    }
+      var populationTotal
+      var councils = ["E06000024"]
+      var colours
+      var councilDirectory = []
+      for (let i = 0; i < councils.length; i++){
+        var directory = '/assets/outputAreas/' + councils[i] + '.json'
+        councilDirectory[i] = directory
       }
-      colours[0] = 'lightgrey'
-      populations2 = []
-      for (let i = 0; i < colours.length; i++){
-        populations2[i] = 0
-      }
-      for (let i = 0; i < numDistricts; i++){
-        var textAdd
-        var textAddPop
-        var textAddPop2
-        var number = String(i);
-        var boundaryId = "district" + number;
-        const boundaryInfoBox = document.createElement("button");
-        boundaryInfoBox.setAttribute('type','button')
-        boundaryInfoBox.setAttribute('id',boundaryId)
-        if (number != '0'){
-          textAdd = document.createTextNode(number);
-        } else if (number == '0') {
-          textAdd = document.createTextNode('Unassigned');
-        }
-        textAddPop = document.createElement('div');
-        if (number != '0'){
-          textAddPop2 = document.createTextNode(populations2[i]);
-        } else if (number == '0') {
-          textAddPop2 = document.createTextNode('Placeholder');
-        }
-        var popName = 'Pop' + boundaryId
-        textAddPop.setAttribute('id',popName)
-        textAddPop.appendChild(textAddPop2)
-        boundaryInfoBox.appendChild(textAdd);
-        boundaryInfoBox.appendChild(textAddPop);
-        const element = document.getElementById("bottom-Aside");
-        element.appendChild(boundaryInfoBox);
-        document.getElementById(boundaryId).addEventListener("click", function() {
-          Constituency_ID = setConstituency(this.id);
-          this.style.size = '10px';
-        })
-        document.getElementById(boundaryId).addEventListener("onmouseover", function() {this.style.boxShadow = '15px 10px 20px lightgrey'})
-        document.getElementById(boundaryId).addEventListener("onmouseout", function() {this.style.boxShadow = 0})
-        document.getElementById(boundaryId).style.backgroundColor = colours[i]
-        document.getElementById(boundaryId).style.display = 'flex'
-        document.getElementById(boundaryId).style.flexDirection = 'column'
-        document.getElementById(boundaryId).style.width = '13vw'
-        document.getElementById(boundaryId).style.color = 'white'
-        document.getElementById(boundaryId).style.margin = '0.5vh'
-        document.getElementById(boundaryId).style.padding = '0.5vh'
-        document.getElementById(boundaryId).style.borderRadius = '0.5vw'
-        document.getElementById(boundaryId).style.borderColor = 'white'
-        document.getElementById(boundaryId).style.zIndex = 2
-        document.getElementById(popName).style.backgroundColor = 'white'
-        document.getElementById(popName).style.color = 'black'
-        document.getElementById(popName).style.alignSelf = 'end'
-        document.getElementById(popName).style.borderRadius = '0.5vw'
-        document.getElementById(popName).style.margin = '0.1vw'
-        document.getElementById(popName).style.padding = '0.1vw'
-      };
+      calculateTotalPopulation(councils, councilDirectory).then((response) =>  {
+          populationTotal = response
+          console.log(populationTotal)
+          //temporary remove when possible
+          var defaultPallete = ['#00009C','#42D700','#CDCD00','#00009C','#AF009B','#B90000','#6100A6','#00DB15','#C33800','#82FF50','#00DBAB','#007FDA','#0000D8','#8A0DE4','#EF1BC1','#F9283C','#FF7335','#FFFF42','#5DFF5D','#6AFFED','#77C7FF','#8585FF']
+          var numDistricts = 46
+          //0 and numDistricts only tempaory(replace with number of seats once applicable)
+          var quota = populationPerDistrict(populationTotal, numDistricts, 1)
+          //---
+          colours = []
+          var count
+          for (let i = 0; i < numDistricts; i++){
+            if(i < defaultPallete.length){
+              count = i
+              var newColor = defaultPallete[count]
+            } else if(i > defaultPallete.length){
+              count = count + 1
+              if (count > defaultPallete.length){
+                  count = 0
+              }
+              var newColor = defaultPallete[count]
+            }
+            colours[i] = newColor
+          }
+          colours[0] = 'lightgrey'
+          populations2 = []
+          for (let i = 0; i < colours.length; i++){
+            populations2[i] = 0
+          }
+          for (let i = 0; i < numDistricts; i++){
+            var textAdd
+            var textAddPop
+            var textAddPop2
+            var nameInput
+            var number = String(i);
+            var boundaryId = "district" + number;
+            const boundaryInfoBox = document.createElement("button");
+            boundaryInfoBox.setAttribute('type','button')
+            boundaryInfoBox.setAttribute('id',boundaryId)
+            if (number != '0'){
+              textAdd = document.createTextNode(number);
+            } else if (number == '0') {
+              textAdd = document.createTextNode('Unassigned');
+            }
+            populationBox = document.createElement('div');
+            textAddPop = document.createElement('div');
+            textAddDeviance = document.createElement('div');
+            nameInput = document.createElement('input');
+            var nameName = 'name' + boundaryId;
+            var devianceName = 'deviance' + boundaryId;
+            var populationBoxName = 'popBox' + boundaryId;
+            nameInput.setAttribute('input', 'text');
+            nameInput.setAttribute('id', nameName);
+            textAddDeviance.setAttribute('id', devianceName);
+            populationBox.setAttribute('id', populationBoxName);
+            boundaryInfoBox.appendChild(textAdd)
+            if (number != '0'){
+              textAddPop2 = document.createTextNode(populations2[i]);
+              boundaryInfoBox.appendChild(nameInput)
+              textAddDeviance2 = document.createTextNode(parseInt(quota-populations2[i]))
+              textAddDeviance.appendChild(textAddDeviance2)
+              populationBox.appendChild(textAddDeviance);
+            } else if (number == '0') {
+              textAddPop2 = document.createTextNode(populationTotal);
+            }
+            var popName = 'Pop' + boundaryId
+            textAddPop.setAttribute('id',popName)
+            textAddPop.appendChild(textAddPop2)
+            populationBox.appendChild(textAddPop);
+            boundaryInfoBox.appendChild(populationBox)
+            const element = document.getElementById("bottom-Aside");
+            element.appendChild(boundaryInfoBox);
+            document.getElementById(boundaryId).addEventListener("click", function() {
+              Constituency_ID = setConstituency(this.id);
+              this.style.size = '10px';
+            })
+            document.getElementById(boundaryId).addEventListener("onmouseover", function() {this.style.boxShadow = '15px 10px 20px lightgrey'})
+            document.getElementById(boundaryId).addEventListener("onmouseout", function() {this.style.boxShadow = 0})
+            document.getElementById(boundaryId).style.backgroundColor = colours[i]
+            document.getElementById(boundaryId).style.display = 'flex'
+            document.getElementById(boundaryId).style.flexDirection = 'column'
+            document.getElementById(boundaryId).style.width = '13vw'
+            document.getElementById(boundaryId).style.color = 'white'
+            document.getElementById(boundaryId).style.margin = '0.5vh'
+            document.getElementById(boundaryId).style.padding = '0.5vh'
+            document.getElementById(boundaryId).style.borderRadius = '0.5vw'
+            document.getElementById(boundaryId).style.borderColor = 'white'
+            document.getElementById(boundaryId).style.zIndex = 2
+            document.getElementById(popName).style.backgroundColor = 'white'
+            document.getElementById(popName).style.color = 'black'
+            document.getElementById(popName).style.alignSelf = 'end'
+            document.getElementById(popName).style.borderRadius = '0.5vw'
+            document.getElementById(popName).style.margin = '0.1vw'
+            document.getElementById(popName).style.padding = '0.1vw'
+            if (number != '0'){
+              document.getElementById(nameName).style.backgroundColor = 'white'
+              document.getElementById(nameName).style.color = 'black'
+              document.getElementById(nameName).style.borderColor = 'white'
+              document.getElementById(nameName).style.alignSelf = 'end'
+              document.getElementById(nameName).style.borderRadius = '0.5vw'
+              document.getElementById(nameName).style.margin = '0.1vw'
+              document.getElementById(nameName).style.padding = '0.1vw'
+              document.getElementById(nameName).style.width = '80%'
+              document.getElementById(devianceName).style.backgroundColor = 'white'
+              document.getElementById(devianceName).style.color = 'red'
+              document.getElementById(devianceName).style.borderColor = 'white'
+              document.getElementById(devianceName).style.alignSelf = 'end'
+              document.getElementById(devianceName).style.borderRadius = '0.5vw'
+              document.getElementById(devianceName).style.margin = '0.1vw'
+              document.getElementById(devianceName).style.padding = '0.1vw'
+              document.getElementById(devianceName).style.width = '80%'
+              document.getElementById(populationBoxName).style.display = 'flex'
+              document.getElementById(populationBoxName).style.alignSelf = 'end'
+            }
+          };
+          var NE = ["E06000001", "E06000002", "E06000003", "E06000004","E06000005", "E06000047", "E06000048", 'E08000020', 'E08000021', 'E08000022', 'E08000023', 'E08000024']
+          let map = L.map("map", {center: [55.262218, -2.801472], zoom: 10});
+          L.tileLayer(
+              "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+              {attribution: "&copy; OpenStreetMap"}
+          ).addTo(map);
+          for (let i = 0; i < councilDirectory.length; i++){
+            renderMap(map, councilDirectory[i], colours, quota)
+          }
+          info.onAdd = function (map) {
+              this._div = L.DomUtil.create('div', 'info');
+              this.update();
+              return this._div;
+          };
+          info.addTo(map);
+          // Disable dragging when user's cursor enters the element
+            info.getContainer().addEventListener('mouseover', function () {
+                map.dragging.disable();
+            });
+
+            // Re-enable dragging when user's cursor leaves the element
+            info.getContainer().addEventListener('mouseout', function () {
+                map.dragging.enable();
+            });
+      })
   </script>
 </main>

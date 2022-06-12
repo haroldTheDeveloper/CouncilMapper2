@@ -27,27 +27,45 @@ const colourSeat = function(layer, colours){
   }
 }
 
-const populationCalc = function(data){
-  populations2[Constituency_ID] = 0
+const populationCalc = function(data, quota){
+  if (Constituency_ID != 0){
+    populations2[Constituency_ID] = 0
+  }
   for (let i = 0; i < data.length; i++){
-    if (data[i].Constituency == Constituency_ID){
+    if (data[i].Constituency == Constituency_ID && Constituency_ID != 0){
       populations2[Constituency_ID] = populations2[Constituency_ID] + data[i].AllAges
       popDistrictId = 'Pop' + 'district' + Constituency_ID
-      populations2[0] = 'Placeholder'
+      var quotaDistrictId = 'deviance' + 'district' + Constituency_ID
       document.getElementById(popDistrictId).innerHTML =  populations2[Constituency_ID]
+      var currentDev = (quota - populations2[Constituency_ID])
+      var bottomQuota = ((quota/100)*15)
+      var topQuota = ((quota/100)*(-15))
+      if (bottomQuota > currentDev && topQuota < currentDev){
+        document.getElementById(quotaDistrictId).style.color = 'green'
+      } else {
+        document.getElementById(quotaDistrictId).style.color = 'red'
+      }
+      document.getElementById(quotaDistrictId).innerHTML =  parseInt((quota - populations2[Constituency_ID])*-1)
     }
   }
   return populations2
 }
 
-const renderMap = function(map, councilDirectory, colours, newData){
+const renderMap = function(map, councilDirectory, colours, quota){
+  console.log(colours)
   fetch(councilDirectory)
     .then(function(response) {
         return response.json();
     })
     .then(function(data) {
       var count = 0
-        L.geoJSON(data, {fillColor:'white', weight: 1, color: 'black', fillOpacity: 0}).on('click', function(e){
+        L.geoJSON(data, {fillColor:'lightgrey', weight: 1, color: 'black', fillOpacity: 0.7}).on('mouseover', function(e){
+          var layer = e.sourceTarget;
+          layer.setStyle({ fillOpacity: 0.9})
+        }).on('mouseout', function(e){
+          var layer = e.sourceTarget;
+          layer.setStyle({fillOpacity: 0.7})
+        }).on('mousedown', function(e){
             count += 1
             var District_Feature = e.sourceTarget.feature;
             var layer = e.sourceTarget;
@@ -70,7 +88,7 @@ const renderMap = function(map, councilDirectory, colours, newData){
                 console.log(newData)
                 populationID = populationDis(newData, District_ID)
                 colourSeat(layer, colours)
-                populations2 = populationCalc(newData)
+                populations2 = populationCalc(newData, quota)
                 console.log(populations2)
               })
             }).on('contextmenu', function(ev) {
@@ -80,20 +98,25 @@ const renderMap = function(map, councilDirectory, colours, newData){
     })
   }
 
-  const calculateTotalPopulation = function(councils){
-    fetch("/assets/Populations/Populations.json")
-    .then(function(response){
-      return response.json()
-    })
-    .then(function(data){
-      var population = 0
-      for (let i = 0; i < councils.length; i++){
-        for (let y = 0; y < data.length; y++){
-          if (councils[i]==data[y].IDLocal){
-            population = data[y].AllAges + population
-          }
+  const calculateTotalPopulation = async function(councils, councilDirectory){
+    var population3 = 0
+    var directory = councilDirectory[0]
+    var response = await fetch(directory, {method:'GET'})
+    const geojsonData = await response.json()
+    response = await fetch("/assets/Populations/Populations.json", {method: 'GET'})
+    const populationData = await response.json()
+    for (let i = 0; i < councils.length; i++){
+      var codes = []
+      for (let x = 0; x < geojsonData.features.length; x++){
+        codes[x] = geojsonData.features[x].properties.OA11CD
+      }
+      for (let y = 0; y < populationData.length; y++){
+        for (let x = 0; x < codes.length; x++){
+          if (codes[x]==populationData[y].ID){
+            population3 = populationData[y].AllAges + population3
         }
       }
-      return population
-    })
+    }
   }
+  return population3
+}
