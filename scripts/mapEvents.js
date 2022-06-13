@@ -51,51 +51,44 @@ const populationCalc = function(data, quota){
   return populations2
 }
 
-const renderMap = function(map, councilDirectory, colours, quota){
+const renderMap = async function(map, councilDirectory, colours, quota){
   console.log(colours)
-  fetch(councilDirectory)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-      var count = 0
-        L.geoJSON(data, {fillColor:'lightgrey', weight: 1, color: 'black', fillOpacity: 0.7, draggable: false}).on('mouseover', function(e){
-          var layer = e.sourceTarget;
-          layer.setStyle({ fillOpacity: 0.9})
-        }).on('mouseout', function(e){
-          var layer = e.sourceTarget;
-          layer.setStyle({fillOpacity: 0.7})
-        }).on('mousedown', function(e){
-            count += 1
-            var District_Feature = e.sourceTarget.feature;
-            var layer = e.sourceTarget;
-            console.log(layer)
-            var District_ID = District_Feature.properties.OA11CD
-            console.log(District_ID)
-            fetch("/assets/Populations/Populations.json")
-              .then(function(response) {
-                  return response.json();
-              })
-              .then(function(data) {
-                var countOnClick = null
-                if (count == 1){
-                  newData = data
-                }
-                if (countOnClick == null){
-                  countOnClick = 1
-                }
-                newData = assign2(District_ID, newData)
-                console.log(newData)
-                populationID = populationDis(newData, District_ID)
-                colourSeat(layer, colours)
-                populations2 = populationCalc(newData, quota)
-                console.log(populations2)
-              })
-            }).on('contextmenu', function(ev) {
-              return false;
-            }, false)
-        .addTo(map);
-    })
+  var response = await fetch(councilDirectory)
+  var data = await response.json();
+    var count = 0
+    var geography = L.geoJSON(data, {fillColor:'lightgrey', weight: 1, color: 'black', fillOpacity: 0.7, draggable: false}).on('mouseover', function(e){
+      var layer = e.sourceTarget;
+      layer.setStyle({ fillOpacity: 0.9})
+    }).on('mouseout', function(e){
+      var layer = e.sourceTarget;
+      layer.setStyle({fillOpacity: 0.7})
+    }).on('mousedown', async function(e){
+        count += 1
+        var District_Feature = e.sourceTarget.feature;
+        var layer = e.sourceTarget;
+        console.log(layer)
+        var District_ID = District_Feature.properties.OA11CD
+        console.log(District_ID)
+        response = await fetch("/assets/Populations/Populations.json")
+        var data2 = await response.json();
+        var countOnClick = null
+        if (count == 1){
+          newData = data2
+        }
+        if (countOnClick == null){
+          countOnClick = 1
+        }
+        newData = assign2(District_ID, newData)
+        console.log(newData)
+        populationID = populationDis(newData, District_ID)
+        colourSeat(layer, colours)
+        populations2 = populationCalc(newData, quota)
+        console.log(populations2)
+        }).on('contextmenu', function(ev) {
+          return false;
+        }, false)
+    geography.addTo(map);
+    map.fitBounds(geography.getBounds());
   }
 
   const calculateTotalPopulation = async function(councils, councilDirectory){

@@ -29,6 +29,27 @@
         var directory = '/assets/outputAreas/' + councils[i] + '.json'
         councilDirectory[i] = directory
       }
+    const styleButton = function (boundaryId, colour){
+      document.getElementById(boundaryId).style.backgroundColor = colour
+      document.getElementById(boundaryId).style.display = 'flex'
+      document.getElementById(boundaryId).style.flexDirection = 'column'
+      document.getElementById(boundaryId).style.width = '13vw'
+      document.getElementById(boundaryId).style.color = 'white'
+      document.getElementById(boundaryId).style.margin = '0.5vh'
+      document.getElementById(boundaryId).style.padding = '0.5vh'
+      document.getElementById(boundaryId).style.borderRadius = '0.5vw'
+      document.getElementById(boundaryId).style.borderColor = 'white'
+      document.getElementById(boundaryId).style.zIndex = 2
+    }
+    const stylePopulationBox = function (id, colour){
+      document.getElementById(id).style.backgroundColor = 'white'
+      document.getElementById(id).style.color = colour
+      document.getElementById(id).style.borderColor = 'white'
+      document.getElementById(id).style.alignSelf = 'end'
+      document.getElementById(id).style.borderRadius = '0.5vw'
+      document.getElementById(id).style.margin = '0.1vw'
+      document.getElementById(id).style.padding = '0.1vw'
+    }
       calculateTotalPopulation(councils, councilDirectory).then((response) =>  {
           populationTotal = response
           console.log(populationTotal)
@@ -107,22 +128,8 @@
             })
             document.getElementById(boundaryId).addEventListener("onmouseover", function() {this.style.boxShadow = '15px 10px 20px lightgrey'})
             document.getElementById(boundaryId).addEventListener("onmouseout", function() {this.style.boxShadow = 0})
-            document.getElementById(boundaryId).style.backgroundColor = colours[i]
-            document.getElementById(boundaryId).style.display = 'flex'
-            document.getElementById(boundaryId).style.flexDirection = 'column'
-            document.getElementById(boundaryId).style.width = '13vw'
-            document.getElementById(boundaryId).style.color = 'white'
-            document.getElementById(boundaryId).style.margin = '0.5vh'
-            document.getElementById(boundaryId).style.padding = '0.5vh'
-            document.getElementById(boundaryId).style.borderRadius = '0.5vw'
-            document.getElementById(boundaryId).style.borderColor = 'white'
-            document.getElementById(boundaryId).style.zIndex = 2
-            document.getElementById(popName).style.backgroundColor = 'white'
-            document.getElementById(popName).style.color = 'black'
-            document.getElementById(popName).style.alignSelf = 'end'
-            document.getElementById(popName).style.borderRadius = '0.5vw'
-            document.getElementById(popName).style.margin = '0.1vw'
-            document.getElementById(popName).style.padding = '0.1vw'
+            stylePopulationBox(popName, 'black')
+            styleButton(boundaryId, colours[i])
             if (number != '0'){
               document.getElementById(nameName).style.backgroundColor = 'white'
               document.getElementById(nameName).style.color = 'black'
@@ -132,14 +139,7 @@
               document.getElementById(nameName).style.margin = '0.1vw'
               document.getElementById(nameName).style.padding = '0.1vw'
               document.getElementById(nameName).style.width = '80%'
-              document.getElementById(devianceName).style.backgroundColor = 'white'
-              document.getElementById(devianceName).style.color = 'red'
-              document.getElementById(devianceName).style.borderColor = 'white'
-              document.getElementById(devianceName).style.alignSelf = 'end'
-              document.getElementById(devianceName).style.borderRadius = '0.5vw'
-              document.getElementById(devianceName).style.margin = '0.1vw'
-              document.getElementById(devianceName).style.padding = '0.1vw'
-              document.getElementById(devianceName).style.width = '80%'
+              stylePopulationBox(devianceName, 'red')
               document.getElementById(populationBoxName).style.display = 'flex'
               document.getElementById(populationBoxName).style.alignSelf = 'end'
             }
