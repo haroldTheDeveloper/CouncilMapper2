@@ -2,6 +2,7 @@
 <head>
 </head>
 <main class="map-Aside">
+  <div id="top-Aside">
   <div id="bottom-Aside">
   </div>
   <script src="/scripts/mapEvents.js"></script>
@@ -11,24 +12,36 @@
     populations = 0
   </script>
   <script>
+    var councilDirectory = JSON.parse(localStorage.getItem('councilDirectory'))
+    var council = JSON.parse(localStorage.getItem('councils'))
+    var councils = []
+    councils[0] = council
+    console.log(councilDirectory)
+    console.log(councils)
+
     const setConstituency = function(boundaryId){
         var tempNumber = boundaryId.replace('district','');
         var tempNumber2 = parseInt(tempNumber);
         var newConstituency_ID = tempNumber2;
       return newConstituency_ID
     }
-    const populationPerDistrict = function(populationTotal, numberSeats, seats){
-      quota = (populationTotal/numberSeats)*seats
-      return quota
+    const populationPerDistrict =  function(populationTotal, numberSeats, seats, districts){
+      var quotas = []
+      var quota
+      var numberSeats = 0
+      for (let i = 0; i < districts; i++){
+        numberSeats = numberSeats + seats[i]
+      }
+      for (let i = 0; i < districts; i++){
+        quota = (populationTotal/numberSeats)*seats[i]
+        quotas[i] = quota
+      }
+      console.log(quotas)
+      return quotas
     }
       var populationTotal
-      var councils = ["E08000004"]
       var colours
-      var councilDirectory = []
-      for (let i = 0; i < councils.length; i++){
-        var directory = '/assets/outputAreas/' + councils[i] + '.json'
-        councilDirectory[i] = directory
-      }
+
     const styleButton = function (boundaryId, colour){
       document.getElementById(boundaryId).style.backgroundColor = colour
       document.getElementById(boundaryId).style.display = 'flex'
@@ -55,13 +68,17 @@
           console.log(populationTotal)
           //temporary remove when possible
           var defaultPallete = ['#00009C','#42D700','#CDCD00','#00009C','#AF009B','#B90000','#6100A6','#00DB15','#C33800','#82FF50','#00DBAB','#007FDA','#0000D8','#8A0DE4','#EF1BC1','#F9283C','#FF7335','#FFFF42','#5DFF5D','#6AFFED','#77C7FF','#8585FF']
-          var numDistricts = 20
-          //0 and numDistricts only tempaory(replace with number of seats once applicable)
-          var quota = populationPerDistrict(populationTotal, numDistricts, 1)
-          //---
+          var numDistricts = 21
+          var numSeats = 20
+          var seatsPerDistrict = []
           colours = []
           var count
           for (let i = 0; i < numDistricts; i++){
+            if (i == 0){
+              seatsPerDistrict[i] = 0
+            }
+            seatsPerDistrict[i] = 1
+            console.log(seatsPerDistrict)
             if(i < defaultPallete.length){
               count = i
               var newColor = defaultPallete[count]
@@ -74,6 +91,9 @@
             }
             colours[i] = newColor
           }
+          //0 and numDistricts only tempaory(replace with number of seats once applicable)
+          var quota = populationPerDistrict(populationTotal, numSeats, seatsPerDistrict, numDistricts)
+          //---
           colours[0] = 'lightgrey'
           populations2 = []
           for (let i = 0; i < colours.length; i++){
@@ -109,7 +129,7 @@
             if (number != '0'){
               textAddPop2 = document.createTextNode(populations2[i]);
               boundaryInfoBox.appendChild(nameInput)
-              textAddDeviance2 = document.createTextNode(parseInt(quota-populations2[i]))
+              textAddDeviance2 = document.createTextNode(parseInt(quota[i]-populations2[i]))
               textAddDeviance.appendChild(textAddDeviance2)
               populationBox.appendChild(textAddDeviance);
             } else if (number == '0') {
@@ -120,7 +140,7 @@
             textAddPop.appendChild(textAddPop2)
             populationBox.appendChild(textAddPop);
             boundaryInfoBox.appendChild(populationBox)
-            const element = document.getElementById("bottom-Aside");
+            const element = document.getElementById("top-Aside");
             element.appendChild(boundaryInfoBox);
             document.getElementById(boundaryId).addEventListener("click", function() {
               Constituency_ID = setConstituency(this.id);
@@ -151,7 +171,7 @@
               {attribution: "&copy; OpenStreetMap"}
           ).addTo(map);
           for (let i = 0; i < councilDirectory.length; i++){
-            renderMap(map, councilDirectory[i], colours, quota)
+            renderMap(map, councilDirectory[i], colours, quota, seatsPerDistrict, numDistricts, populationTotal, numSeats)
           }
       })
   </script>

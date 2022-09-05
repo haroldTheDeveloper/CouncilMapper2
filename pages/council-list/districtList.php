@@ -62,9 +62,22 @@
                 this.style.opacity = 0.3
                 this.style.transition = '1s';
             })
-              document.getElementById(boundaryId).addEventListener('click', function(){
-                var councilID = boundaryId
-                window.location.href = "/pages/council-list/mapCreator.php";
+            councilDirectory = []
+            var councils = []
+              document.getElementById(boundaryId).addEventListener('click', function(e){
+                console.log()
+                var councilIDA = e.target.id
+                var councilID = councilIDA.slice(7)
+                councils[0] = councilID
+                for (let i = 0; i < councils.length; i++){
+                  directory = '/assets/outputAreas/' + councils[i] + '.json'
+                  councilDirectory[i] = directory
+                  localStorage.setItem('councilDirectory', JSON.stringify(councilDirectory))
+                  localStorage.setItem('councils', JSON.stringify(councils))
+                }
+                window.location.href = "/map.php";
+                checknow()
+                return false;
             })
           };
         }

@@ -1,4 +1,4 @@
-#bottom-Aside {
+#top-Aside {
   font-style: normal;
   font-family: sans-serif;
   font-weight: bold;
@@ -9,5 +9,5 @@
   justify-content: flex-start;
   flex-direction: column;
   overflow: scroll;
-  height: 25vw
+  height: 25vw;
 }
