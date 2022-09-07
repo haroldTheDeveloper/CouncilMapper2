@@ -31,12 +31,18 @@
             for (let i = 0; i < numCouncils; i++){
               var number = String(i);
               var boundaryId = "council" + data[i].LAD16CD;
+              var inputId = boundaryId + 'a'
               const boundaryInfoBox = document.createElement("button");
               boundaryInfoBox.setAttribute('id',boundaryId)
               const textAdd = document.createTextNode(councilNames[i]);
               boundaryInfoBox.appendChild(textAdd);
               const element = document.getElementById("districtList");
+              const valueAdd = document.createElement('input')
+              valueAdd.setAttribute('type', 'number')
+              valueAdd.setAttribute('required','true')
+              valueAdd.setAttribute('id', inputId)
               element.appendChild(boundaryInfoBox);
+              boundaryInfoBox.appendChild(valueAdd);
               document.getElementById("districtList").style.width = '90vw'
               document.getElementById("districtList").style.display = 'grid'
               document.getElementById("districtList").style.gridTemplateColumns = "repeat(auto-fill,minmax(11vw, 1fr))"
@@ -67,13 +73,16 @@
               document.getElementById(boundaryId).addEventListener('click', function(e){
                 console.log()
                 var councilIDA = e.target.id
+                var inputIdA = councilIDA + 'a'
                 var councilID = councilIDA.slice(7)
+                let seats = (document.getElementById(inputIdA).value)
                 councils[0] = councilID
                 for (let i = 0; i < councils.length; i++){
                   directory = '/assets/outputAreas/' + councils[i] + '.json'
                   councilDirectory[i] = directory
                   localStorage.setItem('councilDirectory', JSON.stringify(councilDirectory))
                   localStorage.setItem('councils', JSON.stringify(councils))
+                  localStorage.setItem('seats', seats)
                 }
                 window.location.href = "/map.php";
                 checknow()

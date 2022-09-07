@@ -14,6 +14,7 @@
   <script>
     var councilDirectory = JSON.parse(localStorage.getItem('councilDirectory'))
     var council = JSON.parse(localStorage.getItem('councils'))
+    var numSeatsA = localStorage.getItem('seats')
     var councils = []
     councils[0] = council
     console.log(councilDirectory)
@@ -29,7 +30,7 @@
       var quotas = []
       var quota
       var numberSeats = 0
-      for (let i = 0; i < districts; i++){
+      for (let i = 0; i < (districts-1); i++){
         numberSeats = numberSeats + seats[i]
       }
       for (let i = 0; i < districts; i++){
@@ -68,12 +69,12 @@
           console.log(populationTotal)
           //temporary remove when possible
           var defaultPallete = ['#00009C','#42D700','#CDCD00','#00009C','#AF009B','#B90000','#6100A6','#00DB15','#C33800','#82FF50','#00DBAB','#007FDA','#0000D8','#8A0DE4','#EF1BC1','#F9283C','#FF7335','#FFFF42','#5DFF5D','#6AFFED','#77C7FF','#8585FF']
-          var numDistricts = 21
-          var numSeats = 20
+          var numDistricts = numSeatsA
+          var numSeats = numSeatsA
           var seatsPerDistrict = []
           colours = []
           var count
-          for (let i = 0; i < numDistricts; i++){
+          for (let i = 0; i-1 < numDistricts; i++){
             if (i == 0){
               seatsPerDistrict[i] = 0
             }
